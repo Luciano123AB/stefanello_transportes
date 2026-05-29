@@ -10,8 +10,18 @@ body {
     background-position: center;
 }
 
+#barra_inferior {
+    display: flex;
+    gap: 3rem;
+}
+
 @media (width <= 430px) {
     body {
         background-size: 200vw 100vh;
+    }
+
+    #barra_inferior {
+        display: grid;
+        gap: 0rem;
     }
 }
