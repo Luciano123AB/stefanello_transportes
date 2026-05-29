@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/assets/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (width <= 430px) {
+    body {
+        background-size: 200vw 100vh;
+    }
+}

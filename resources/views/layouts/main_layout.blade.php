@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ env('APP_NAME') }}</title> 
-       
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>{{ env('APP_NAME') }} - {{ $page }}</title>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+    @include('layouts.partials.links')
+
+    <link rel="stylesheet" href="{{ asset('assets/css/main_styles.css') }}">
+    
+    @vite([
+        'resources/css/app.css',
+        'resources/js/app.js'
+    ])
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+    @include('layouts.partials.navbar')
+
     @yield('content')
+
+    @include('layouts.partials.footer')
 </body>
 </html>
