@@ -10,7 +10,29 @@ body {
     background-position: center;
 }
 
-#barra_inferior {
+#central_content {
+    max-height: 50vh;
+}
+
+#truck {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#truck_driver {
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#bottom_bar {
     display: flex;
     gap: 3rem;
 }
@@ -20,7 +42,19 @@ body {
         background-size: 200vw 100vh;
     }
 
-    #barra_inferior {
+    #truck {
+        top: 45%;
+        left: 5%;
+        width: 90%;
+    }
+
+    #truck_driver {
+        top: 50%;
+        left: 60%;
+        width: 50px;
+    }
+
+    #bottom_bar {
         display: grid;
         gap: 0rem;
     }
