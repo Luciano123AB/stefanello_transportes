@@ -3,35 +3,6 @@
     padding: 0;
 }
 
-body {
-    background-image: url("/assets/images/backgrounds/home.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#central_content {
-    max-height: 50vh;
-}
-
-#truck {
-    position: absolute;
-    width: 50%;
-    top: 40%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-#truck_driver {
-    position: absolute;
-    width: 100px;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
 #top_bar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/header.png");
     background-size: cover;
@@ -40,39 +11,8 @@ body {
     border-bottom: 5px dashed black;
 }
 
-#bottom_bar {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/footer.png") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-top: 5px dashed black;
-    display: flex;
-    gap: 3rem;
-}
-
 @media (width <= 430px) {
-    body {
-        background-size: 200vw 100vh;
-    }
-
     #buttons_navbar {
         margin-top: 8px;
-    }
-
-    #truck {
-        top: 50%;
-        left: 5%;
-        width: 90%;
-    }
-
-    #truck_driver {
-        top: 50%;
-        left: 60%;
-        width: 50px;
-    }
-
-    #bottom_bar {
-        display: grid;
-        gap: 0rem;
     }
 }
