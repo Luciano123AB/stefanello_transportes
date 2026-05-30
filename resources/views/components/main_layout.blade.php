@@ -19,13 +19,8 @@
 <body class="d-flex flex-column min-vh-100 fst-italic">
     @include('layouts.partials.navbar')
 
-    <div id="central_content" class="container my-5 overflow-auto">
-        {{ $slot }}
-    </div>
+    {{ $slot }}
 
     @include('layouts.partials.footer')
-
-    <img src="{{ asset('assets/images/truck.png') }}" id="truck" class="animate__animated animate__fadeInLeft">
-    <img src="{{ asset('assets/images/truck_driver.png') }}" id="truck_driver" class="animate__animated animate__backInRight">
 </body>
 </html>
