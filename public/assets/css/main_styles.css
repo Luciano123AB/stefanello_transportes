@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("/assets/images/background.png");
+    background-image: url("/assets/images/backgrounds/home.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,7 +17,7 @@ body {
 #truck {
     position: absolute;
     width: 50%;
-    top: 30%;
+    top: 40%;
     left: 25%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -32,15 +32,20 @@ body {
     z-index: -1;
 }
 
-#border-header {
+#top_bar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-bottom: 5px dashed black;
 }
 
-.border-footer {
-    border-top: 5px dashed black;
-}
-
 #bottom_bar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/footer.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 5px dashed black;
     display: flex;
     gap: 3rem;
 }
@@ -50,8 +55,12 @@ body {
         background-size: 200vw 100vh;
     }
 
+    #buttons_navbar {
+        margin-top: 8px;
+    }
+
     #truck {
-        top: 45%;
+        top: 50%;
         left: 5%;
         width: 90%;
     }
