@@ -11,6 +11,10 @@
     border-bottom: 5px dashed black;
 }
 
+.buttons_navbar_color {
+    background-color: #fd7e14;
+}
+
 #bottom_bar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/footer.png") ;
     background-size: cover;
