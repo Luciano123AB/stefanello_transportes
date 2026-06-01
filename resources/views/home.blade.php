@@ -1,7 +1,7 @@
 <x-main_layout :pageTitle="'Home'">
     <h1 class="text-center fw-bold mb-5">Seja BEM-VINDO!</h1>
     <div class="row text-white">
-        <div class="col">
+        <div class="col bg-dark opacity-50">
             <h2>Quem sou Eu?</h2>
             <div id="central_content" class="overflow-auto">
                 <p>
@@ -16,7 +16,7 @@
                 </p>
             </div>
         </div>
-        <div class="col">
+        <div class="col bg-dark opacity-50">
             <h2>Compromissos</h2>
             <div id="central_content" class="overflow-auto">
                 <p>
