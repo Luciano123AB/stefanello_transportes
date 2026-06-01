@@ -9,20 +9,24 @@
 
     <div class="align-self-center">
         <p class="bg-white border border-black rounded p-1">
-            <i class="bi bi-building"></i>
+            <iconify-icon icon="streamline-emojis:office-building"></iconify-icon>
             CNPJ: 00.000.000/0000-00
         </p>
     </div>
 
-    <div class="d-grid bg-white border border-black rounded p-1">
-        <label class="fw-bold">Contatos:</label>
-        <p class="mb-0">
-            <i class="bi bi-envelope-at"></i>
+    <div id="contacts" class="d-grid bg-white border border-black rounded p-1">
+        <label class="fw-bold text-center">Contatos:</label>
+        <div>
+            <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
             Email: endereco@gmail.com
-        </p>
-        <p class="mb-0">
-            <i class="bi bi-whatsapp"></i>
+        </div>
+        <div>
+            <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
             Whatsapp: (99) 99999-9999
-        </p>
+        </div>
+        <div>
+            <iconify-icon icon="streamline-plump-color:phone"></iconify-icon>
+            Telefone: (99) 99999-9999
+        </div>
     </div>
 </footer>

@@ -21,6 +21,10 @@
     gap: 3rem;
 }
 
+#contacts {
+    text-align: start;
+}
+
 @media (width <= 430px) {
     #buttons_navbar {
         margin-top: 8px;
@@ -29,5 +33,9 @@
     #bottom_bar {
         display: grid;
         gap: 0rem;
+    }
+
+    #contacts {
+        text-align: center;
     }
 }
