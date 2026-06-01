@@ -5,8 +5,14 @@
             <a href="{{ route('home') }}" class="navbar-brand"><span class="fs-4 fw-bold">{{ env('APP_NAME') }}:</span> {{ $pageTitle }}</a>
         </div>
         <div id="buttons_navbar" class="d-flex gap-2">
-            <a href="#" class="btn btn-warning border-black shadow-sm">LOGIN</a>
-            <a href="#" class="btn btn-warning border-black shadow-sm">CADASTRAR</a>
+            <a href="#" class="btn btn-warning border-black shadow-sm">
+                <iconify-icon icon="streamline-color:login-1"></iconify-icon>
+                LOGIN
+            </a>
+            <a href="#" class="btn btn-warning border-black shadow-sm">
+                <iconify-icon icon="streamline-color:user-add-plus"></iconify-icon>
+                CADASTRAR
+            </a>
         </div>
     </div>
 </nav>
