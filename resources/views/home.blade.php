@@ -1,45 +1,39 @@
 <x-main_layout :pageTitle="'Home'">
-    <h1 class="text-center fw-bold">Seja BEM-VINDO!</h1>
+    <h1 class="text-center fw-bold mb-5">Seja BEM-VINDO!</h1>
     <div class="row text-white">
-        <p id="central_content" class="col overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem et exercitationem asperiores adipisci aliquam magni commodi nostrum. Sit atque omnis quas dolorem earum autem rem dignissimos quisquam, est iusto.
-        Excepturi ex provident amet repellendus ea blanditiis quos ipsa quidem tempore, dicta tenetur, fuga esse laborum neque sunt numquam quaerat enim. Molestias perspiciatis, consectetur laudantium nulla odio voluptatibus sapiente modi?
-        Culpa modi possimus, sapiente accusantium pariatur ea ullam eos fuga corporis sint ipsam est atque et cupiditate maxime quos aut at adipisci esse tempora nesciunt nam rem cumque ipsum. Doloremque.
-        Adipisci totam at ad rerum in excepturi! Veniam commodi pariatur error autem, officiis culpa doloribus et nobis inventore labore repellat praesentium facere asperiores, vel soluta. Provident nemo ipsam earum laborum!
-        Quasi, praesentium earum! Quam, iusto quo! Magnam culpa officiis earum modi cupiditate, doloremque hic id reprehenderit debitis velit fugit quas beatae odio enim iusto possimus error maxime illo iure. Nostrum.
-        Ea sint totam magni ducimus deserunt corporis, optio laborum obcaecati architecto nulla itaque placeat. Et quibusdam amet aspernatur saepe molestias accusamus aliquam tempora numquam, eos nihil optio voluptatum quam tenetur!
-        Nisi sed quam qui explicabo nobis sapiente odio amet animi, harum fugit laudantium aliquid recusandae minima ipsam enim! Iste consectetur eius deserunt magnam, quibusdam hic. Perferendis nesciunt aliquid distinctio obcaecati?
-        In, voluptates? Voluptas, nulla illum temporibus laborum explicabo doloribus repudiandae minima ratione esse dolore voluptate adipisci ut deserunt, officia veritatis possimus? Eos numquam nulla asperiores sit adipisci iusto vero deserunt.
-        Atque ab quas minima, animi sed a eius necessitatibus quis molestiae tenetur obcaecati distinctio tempora pariatur numquam consequatur omnis id dolore mollitia dolorem reprehenderit magni cum corrupti ut. Beatae, animi.
-        Numquam similique porro commodi nihil quia suscipit beatae optio consequatur? Amet iure deleniti, hic recusandae vero, natus eligendi cupiditate fugiat voluptas, distinctio debitis ad asperiores laudantium unde perspiciatis officiis ab?
-        Illo veniam, optio nisi accusantium officiis repellendus quasi cupiditate eos reprehenderit at reiciendis, quis voluptas animi porro repellat beatae, excepturi itaque perspiciatis eum. Doloribus nemo, placeat beatae repellendus ut quidem.
-        Doloremque ullam est quas autem rerum provident ipsum sed a voluptatum ab eius sint quidem voluptatibus voluptates perspiciatis non, eveniet nihil praesentium accusamus quibusdam sit ut maxime? Similique, perferendis cum!
-        Et corrupti repellat, sed eos laborum magni facere commodi iure saepe architecto quae velit consequuntur quasi nemo corporis hic tempore quia reprehenderit ad? Quidem possimus, cupiditate sit provident fuga aliquam.
-        Quia sunt quasi soluta, saepe deleniti accusamus! Commodi harum exercitationem quas incidunt eum suscipit unde iure accusantium, mollitia repudiandae. Incidunt perferendis corrupti ab neque quis ex minus, beatae praesentium aliquid.
-        Facere beatae esse consequuntur fuga fugit facilis, quasi maiores debitis consectetur libero commodi alias vitae assumenda veritatis doloremque! Asperiores ipsa fugit est repellat dolore eligendi reiciendis amet cupiditate harum officia.
-        Vitae ullam eligendi praesentium pariatur ipsam molestiae non eius quae nam adipisci voluptatibus enim porro debitis, cum aliquid natus accusamus quod unde ad, deleniti fugit modi ex expedita? Voluptates, dolorum!
-        Corporis at alias ad amet magnam tempora molestiae a quisquam veniam, officia incidunt accusantium quidem! Autem aliquid ipsa cupiditate fugiat voluptate, dicta rerum sunt nam assumenda enim doloribus porro laborum.
-        Exercitationem provident, consectetur quae at corrupti iusto consequuntur laudantium tempore harum veniam sapiente nisi impedit? Quibusdam nesciunt animi, ut ratione ipsa voluptatibus delectus repudiandae, eveniet, rerum cum temporibus repellat mollitia!
-        Ratione omnis labore sapiente deserunt quam culpa repellat ut cupiditate eius, earum quia fugit aperiam non eveniet eum id inventore perspiciatis magnam pariatur! Labore aliquid consequuntur dolorem voluptas eveniet assumenda.
-        Nemo dolor labore quae sunt magnam voluptate, at voluptatibus incidunt molestias tenetur, velit aspernatur accusamus dolorem nostrum exercitationem quidem! Tempora nulla ea provident rem sit, ipsa animi hic minus? Fugiat.</p>
-        <p id="central_content" class="col overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem et exercitationem asperiores adipisci aliquam magni commodi nostrum. Sit atque omnis quas dolorem earum autem rem dignissimos quisquam, est iusto.
-        Excepturi ex provident amet repellendus ea blanditiis quos ipsa quidem tempore, dicta tenetur, fuga esse laborum neque sunt numquam quaerat enim. Molestias perspiciatis, consectetur laudantium nulla odio voluptatibus sapiente modi?
-        Culpa modi possimus, sapiente accusantium pariatur ea ullam eos fuga corporis sint ipsam est atque et cupiditate maxime quos aut at adipisci esse tempora nesciunt nam rem cumque ipsum. Doloremque.
-        Adipisci totam at ad rerum in excepturi! Veniam commodi pariatur error autem, officiis culpa doloribus et nobis inventore labore repellat praesentium facere asperiores, vel soluta. Provident nemo ipsam earum laborum!
-        Quasi, praesentium earum! Quam, iusto quo! Magnam culpa officiis earum modi cupiditate, doloremque hic id reprehenderit debitis velit fugit quas beatae odio enim iusto possimus error maxime illo iure. Nostrum.
-        Ea sint totam magni ducimus deserunt corporis, optio laborum obcaecati architecto nulla itaque placeat. Et quibusdam amet aspernatur saepe molestias accusamus aliquam tempora numquam, eos nihil optio voluptatum quam tenetur!
-        Nisi sed quam qui explicabo nobis sapiente odio amet animi, harum fugit laudantium aliquid recusandae minima ipsam enim! Iste consectetur eius deserunt magnam, quibusdam hic. Perferendis nesciunt aliquid distinctio obcaecati?
-        In, voluptates? Voluptas, nulla illum temporibus laborum explicabo doloribus repudiandae minima ratione esse dolore voluptate adipisci ut deserunt, officia veritatis possimus? Eos numquam nulla asperiores sit adipisci iusto vero deserunt.
-        Atque ab quas minima, animi sed a eius necessitatibus quis molestiae tenetur obcaecati distinctio tempora pariatur numquam consequatur omnis id dolore mollitia dolorem reprehenderit magni cum corrupti ut. Beatae, animi.
-        Numquam similique porro commodi nihil quia suscipit beatae optio consequatur? Amet iure deleniti, hic recusandae vero, natus eligendi cupiditate fugiat voluptas, distinctio debitis ad asperiores laudantium unde perspiciatis officiis ab?
-        Illo veniam, optio nisi accusantium officiis repellendus quasi cupiditate eos reprehenderit at reiciendis, quis voluptas animi porro repellat beatae, excepturi itaque perspiciatis eum. Doloribus nemo, placeat beatae repellendus ut quidem.
-        Doloremque ullam est quas autem rerum provident ipsum sed a voluptatum ab eius sint quidem voluptatibus voluptates perspiciatis non, eveniet nihil praesentium accusamus quibusdam sit ut maxime? Similique, perferendis cum!
-        Et corrupti repellat, sed eos laborum magni facere commodi iure saepe architecto quae velit consequuntur quasi nemo corporis hic tempore quia reprehenderit ad? Quidem possimus, cupiditate sit provident fuga aliquam.
-        Quia sunt quasi soluta, saepe deleniti accusamus! Commodi harum exercitationem quas incidunt eum suscipit unde iure accusantium, mollitia repudiandae. Incidunt perferendis corrupti ab neque quis ex minus, beatae praesentium aliquid.
-        Facere beatae esse consequuntur fuga fugit facilis, quasi maiores debitis consectetur libero commodi alias vitae assumenda veritatis doloremque! Asperiores ipsa fugit est repellat dolore eligendi reiciendis amet cupiditate harum officia.
-        Vitae ullam eligendi praesentium pariatur ipsam molestiae non eius quae nam adipisci voluptatibus enim porro debitis, cum aliquid natus accusamus quod unde ad, deleniti fugit modi ex expedita? Voluptates, dolorum!
-        Corporis at alias ad amet magnam tempora molestiae a quisquam veniam, officia incidunt accusantium quidem! Autem aliquid ipsa cupiditate fugiat voluptate, dicta rerum sunt nam assumenda enim doloribus porro laborum.
-        Exercitationem provident, consectetur quae at corrupti iusto consequuntur laudantium tempore harum veniam sapiente nisi impedit? Quibusdam nesciunt animi, ut ratione ipsa voluptatibus delectus repudiandae, eveniet, rerum cum temporibus repellat mollitia!
-        Ratione omnis labore sapiente deserunt quam culpa repellat ut cupiditate eius, earum quia fugit aperiam non eveniet eum id inventore perspiciatis magnam pariatur! Labore aliquid consequuntur dolorem voluptas eveniet assumenda.
-        Nemo dolor labore quae sunt magnam voluptate, at voluptatibus incidunt molestias tenetur, velit aspernatur accusamus dolorem nostrum exercitationem quidem! Tempora nulla ea provident rem sit, ipsa animi hic minus? Fugiat.</p>
+        <div class="col">
+            <h2>Quem sou Eu?</h2>
+            <div id="central_content" class="overflow-auto">
+                <p>
+                    Com anos de experiência nas estradas e uma trajetória construída com muito trabalho, dedicação e responsabilidade, eu atuo como caminhoneiro
+                    autônomo oferecendo serviços de transporte com segurança, pontualidade e compromisso. Natural de Santa Maria - RS, eu construo minha reputação
+                    atendendo clientes com seriedade e eficiência, sempre buscando entregar soluções rápidas e confiáveis para cada demanda.
+                </p>
+                <p>
+                    Operando com um caminhão Scania equipado com caçamba, está preparado para atender diferentes tipos de transporte, levando profissionalismo e
+                    tranquilidade para quem precisa de um parceiro de confiança. Minha experiência prática, adquirida ao longo de muitos anos de trabalho, garanto
+                    um serviço de qualidade e a segurança que cada carga merece.
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Compromissos</h2>
+            <div id="central_content" class="overflow-auto">
+                <p>
+                    Mais do que transportar cargas, eu trabalho para resolver problemas. Conhecido pela disponibilidade e agilidade no
+                    atendimento, estou sempre pronto para pegar a estrada quando surge uma necessidade, buscando atender meus clientes da forma mais rápida e
+                    eficiente possível.
+                </p>
+                <p>
+                    Meu atendimento próximo e transparente facilita a comunicação em todas as etapas do serviço, proporcionando confiança e tranquilidade. Com
+                    dedicação, experiência e responsabilidade, ofereço soluções sob medida para cada transporte, mantendo o compromisso de cumprir prazos e superar
+                    expectativas.
+                </p>
+                <p>
+                    Seja para serviços programados ou demandas urgentes, você pode contar com um profissional experiente, comprometido e preparado para enfrentar
+                    qualquer desafio na estrada.
+                </p>
+            </div>
+        </div>
     </div>
 </x-main_layout>
