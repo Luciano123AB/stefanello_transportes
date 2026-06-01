@@ -10,6 +10,14 @@ body {
     background-position: center;
 }
 
+#top_bar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 5px dashed black;
+}
+
 .buttons_navbar_color {
     background-color: #fd7e14;
 }
@@ -34,14 +42,6 @@ body {
     left: 55%;
     transform: translate(-50%, -50%);
     z-index: -1;
-}
-
-#top_bar {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-bottom: 5px dashed black;
 }
 
 #bottom_bar {
