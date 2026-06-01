@@ -50,6 +50,10 @@ body {
     gap: 3rem;
 }
 
+#contacts {
+    text-align: start;
+}
+
 @media (width <= 430px) {
     body {
         background-size: 200vw 100vh;
@@ -74,5 +78,9 @@ body {
     #bottom_bar {
         display: grid;
         gap: 0rem;
+    }
+
+    #contacts {
+        text-align: center;
     }
 }
