@@ -11,6 +11,10 @@
     border-bottom: 5px dashed black;
 }
 
+.buttons_navbar_color {
+    background-color: #fd7e14;
+}
+
 @media (width <= 430px) {
     #buttons_navbar {
         margin-top: 8px;
