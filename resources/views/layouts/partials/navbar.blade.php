@@ -1,4 +1,4 @@
-<nav id="top_bar" class="navbar border-5 border-black bg-success shadow-lg">
+<nav id="top_bar" class="navbar border-5 border-warning bg-success shadow-lg">
     <div class="container-fluid">
         <div class="buttons_navbar_color d-flex align-items-center border border-black rounded">
             <img src="{{ asset('assets/images/icons/logo.png') }}" class="animate__animated animate__rollIn animate__infinite m-1" height="45">
