@@ -10,6 +10,10 @@ body {
     background-position: center;
 }
 
+.buttons_navbar_color {
+    background-color: #fd7e14;
+}
+
 #central_content {
     max-height: 50vh;
 }
