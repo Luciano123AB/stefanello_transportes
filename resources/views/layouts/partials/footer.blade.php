@@ -1,30 +1,30 @@
-<footer id="bottom_bar" class="justify-content-center flex-wrap border-5 border-warning bg-success text-center shadow-lg p-3 mt-auto">
+<footer id="bottom_bar" class="justify-content-center gap-3 flex-wrap border-5 border-warning bg-success text-center shadow-lg p-3 mt-auto">
     <div class="d-grid align-self-center">
-        <p class="bg-light border border-black fw-bold rounded p-1">
+        <div class="bg-light border border-black fw-bold rounded p-1">
             © Todos os direitos reservados: Maurício Stefanello Barbieri
             <br>
             2026 - {{ date('Y') }} | {{ config('app.name') }}
-        </p>
+        </div>
     </div>
 
-    <div class="align-self-center">
-        <p class="bg-light border border-black rounded p-1">
+    <div class="bg-light border border-black align-self-center rounded p-1 overflow-hidden">
+        <div class="animate__animated animate__fadeInLeft">
             <iconify-icon icon="streamline-emojis:office-building"></iconify-icon>
             CNPJ: 00.000.000/0000-00
-        </p>
+        </div>
     </div>
 
-    <div id="contacts" class="d-grid bg-light border border-black rounded p-1">
+    <div id="contacts" class="d-grid bg-light border border-black rounded p-1 overflow-hidden">
         <label class="fw-bold text-center">Contatos:</label>
-        <div>
-            <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
+        <div class="animate__animated animate__fadeInLeft">
+            <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
             Email: endereco@gmail.com
         </div>
-        <div>
-            <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
+        <div class="animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+            <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
             Whatsapp: (99) 99999-9999
         </div>
-        <div>
+        <div class="animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
             <iconify-icon icon="streamline-plump-color:phone"></iconify-icon>
             Telefone: (99) 99999-9999
         </div>
