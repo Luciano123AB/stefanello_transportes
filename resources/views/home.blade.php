@@ -1,5 +1,6 @@
 <x-main_layout :pageTitle="'Home'">
     <h1 class="text-center fw-bold mb-5">Seja BEM-VINDO!</h1>
+    
     <div class="row text-white">
         <div class="col bg-dark opacity-50">
             <h2>Quem sou Eu?</h2>
