@@ -3,7 +3,7 @@
         <p class="bg-light border border-black fw-bold rounded p-1">
             © Todos os direitos reservados: Maurício Stefanello Barbieri
             <br>
-            2026 - {{ date('Y') }} | {{ env('APP_NAME') }}
+            2026 - {{ date('Y') }} | {{ config('app.name') }}
         </p>
     </div>
 
