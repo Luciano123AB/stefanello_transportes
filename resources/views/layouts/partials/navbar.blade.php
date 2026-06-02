@@ -12,7 +12,7 @@
             </a>
             <a href="#" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
                 <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
-                LOGAR
+                ENTRAR
             </a>
         </div>
     </div>
