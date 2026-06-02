@@ -6,16 +6,31 @@
             {{ $pageTitle }}
         </a>
         <div id="buttons_navbar" class="d-flex gap-2">
-            <a href="#" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
-                <iconify-icon icon="streamline-color:user-add-plus" class="animate__animated animate__heartBeat animate__infinite"></iconify-icon>
-                CADASTRAR
-            </a>
-            @if ($pageTitle !== 'Login')
-                <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
-                    <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
-                    ENTRAR
+            @guest
+                <a href="#" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
+                    <iconify-icon icon="streamline-color:user-add-plus" class="animate__animated animate__heartBeat animate__infinite"></iconify-icon>
+                    CADASTRAR
                 </a>
-            @endif
+                @if ($pageTitle !== 'Login')
+                    <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
+                        <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
+                        ENTRAR
+                    </a>
+                @endif
+            @else
+                <div class="buttons_navbar_color d-grid btn btn-warning border-black">
+                    <label>User: {{ auth()->user()->name }}</label>
+                    <label>Email: {{ auth()->user()->email }}</label>
+                </div>
+                <form action="{{ route('logout') }}" method="post" class="buttons_navbar_color btn btn-warning align-self-center border-black shadow-sm p-0">
+                    @csrf
+
+                    <button type="submit" class="btn">
+                        <iconify-icon icon="streamline-color:logout-1" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
+                        SAIR
+                    </button>
+                </form>
+            @endguest
         </div>
     </div>
 </nav>
