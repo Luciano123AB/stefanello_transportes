@@ -1,4 +1,4 @@
-<footer id="bottom_bar" class="justify-content-center gap-3 flex-wrap border-5 border-warning bg-success text-center shadow-lg p-3 mt-auto">
+<footer id="bottom_bar" class="gap-3 flex-wrap border-5 border-warning bg-success text-center shadow-lg p-3 mt-auto">
     <div class="d-grid align-self-center">
         <div class="bg-light border border-black fw-bold rounded p-1">
             © Todos os direitos reservados: Maurício Stefanello Barbieri
