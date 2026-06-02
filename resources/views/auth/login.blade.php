@@ -37,7 +37,7 @@
             </a>
 
             <div id="buttons_form" class="gap-1">
-                <button type="button" class="btn btn-danger border-black shadow-sm">
+                <button type="button" class="btn btn-danger border-black shadow-sm" onclick="this.form.reset()">
                     <iconify-icon icon="glyphs-poly:trash-1" class="animate__animated animate__bounceOut animate__infinite"></iconify-icon>
                     LIMPAR
                 </button>
