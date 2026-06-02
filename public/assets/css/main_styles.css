@@ -58,6 +58,10 @@ body {
     text-align: start;
 }
 
+#buttons_form {
+    display: flex;
+}
+
 @media (width <= 430px) {
     body {
         background-size: 200vw 100vh;
@@ -86,5 +90,9 @@ body {
 
     #contacts {
         text-align: center;
+    }
+
+    #buttons_form {
+        display: grid;
     }
 }

@@ -10,10 +10,12 @@
                 <iconify-icon icon="streamline-color:user-add-plus" class="animate__animated animate__heartBeat animate__infinite"></iconify-icon>
                 CADASTRAR
             </a>
-            <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
-                <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
-                LOGAR
-            </a>
+            @if ($pageTitle !== 'Login')
+                <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
+                    <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
+                    ENTRAR
+                </a>
+            @endif
         </div>
     </div>
 </nav>
