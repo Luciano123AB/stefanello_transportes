@@ -22,7 +22,7 @@
     background-position: center;
     border-top: 5px dashed;
     display: flex;
-    gap: 3rem;
+    justify-content: space-evenly;
 }
 
 #contacts {
@@ -36,7 +36,6 @@
 
     #bottom_bar {
         display: grid;
-        gap: 0rem;
     }
 
     #contacts {
