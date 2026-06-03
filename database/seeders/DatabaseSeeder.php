@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'mbarbieri273@gmail.com',
             'email_verified_at' => Carbon::now(),
             'password' => Hash::make('150177Mb'),
+            'role' => 'admin',
             'created_at' => Carbon::now()
         ]);
     }
