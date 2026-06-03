@@ -8,8 +8,6 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     @include('layouts.partials.links')
-
-    <link rel="stylesheet" href="{{ asset('assets/css/main_styles.css') }}">
     @livewireStyles
     
     @vite([

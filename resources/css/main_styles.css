@@ -4,14 +4,14 @@
 }
 
 body {
-    background-image: url("/assets/images/backgrounds/home.png");
+    background-image: url("/public/assets/images/backgrounds/home.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #top_bar {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/header.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/public/assets/images/backgrounds/header.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -45,7 +45,7 @@ body {
 }
 
 #bottom_bar {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/backgrounds/footer.png") ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/public/assets/images/backgrounds/footer.png") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
