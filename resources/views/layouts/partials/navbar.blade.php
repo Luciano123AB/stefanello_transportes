@@ -7,10 +7,12 @@
         </a>
         <div id="buttons_navbar" class="d-flex gap-2">
             @guest
-                <a href="#" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
-                    <iconify-icon icon="streamline-color:user-add-plus" class="animate__animated animate__heartBeat animate__infinite"></iconify-icon>
-                    CADASTRAR
-                </a>
+                @if ($pageTitle !== 'Cadastro')
+                    <a href="{{ route('register') }}" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
+                        <iconify-icon icon="streamline-color:user-add-plus" class="animate__animated animate__heartBeat animate__infinite"></iconify-icon>
+                        CADASTRAR
+                    </a>
+                @endif
                 @if ($pageTitle !== 'Login')
                     <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black shadow-sm">
                         <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
