@@ -10,11 +10,13 @@ class User extends Authenticatable
     
     protected $fillable = [
         'email',
-        'password'
+        'password',
+        'role'
     ];
     protected $casts = [
         'email' => 'string',
-        'password' => 'string'
+        'password' => 'string',
+        'role' => 'string'
     ];
 
 }
