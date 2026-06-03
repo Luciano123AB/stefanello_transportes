@@ -10,6 +10,7 @@
     @include('layouts.partials.links')
 
     <link rel="stylesheet" href="{{ asset('assets/css/main_styles.css') }}">
+    @livewireStyles
     
     @vite([
         'resources/css/app.css',
@@ -27,5 +28,7 @@
 
     <img src="{{ asset('assets/images/truck.png') }}" id="truck" class="animate__animated animate__fadeInLeft">
     <img src="{{ asset('assets/images/truck_driver.png') }}" id="truck_driver" class="animate__animated animate__backInRight">
+
+    @livewireScripts
 </body>
 </html>
