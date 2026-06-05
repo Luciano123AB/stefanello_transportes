@@ -10,7 +10,7 @@
     <div class="bg-light border border-black align-self-center rounded p-1 overflow-hidden">
         <div class="animate__animated animate__fadeInLeft">
             <iconify-icon icon="streamline-emojis:office-building"></iconify-icon>
-            CNPJ: 00.000.000/0000-00
+            CNPJ: 33.589.582/0001-42
         </div>
     </div>
 
@@ -18,15 +18,15 @@
         <label class="fw-bold text-center">Contatos:</label>
         <div class="animate__animated animate__fadeInLeft">
             <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
-            Email: endereco@gmail.com
+            Email: mbarbieri273@gmail.com
         </div>
         <div class="animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
             <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
-            Whatsapp: (99) 99999-9999
+            Whatsapp: (55) 99629-4129
         </div>
         <div class="animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
             <iconify-icon icon="streamline-plump-color:phone"></iconify-icon>
-            Telefone: (99) 99999-9999
+            Telefone: (55) 99629-4129
         </div>
     </div>
 </footer>

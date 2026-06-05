@@ -62,6 +62,15 @@ body {
     display: flex;
 }
 
+#informations {
+    grid-template-columns: 1fr 1fr;
+}
+
+.division {
+    border-right: 1px solid black;
+    margin-right: 10px;
+}
+
 @media (width <= 430px) {
     body {
         background-size: 200vw 100vh;
@@ -93,5 +102,14 @@ body {
 
     #buttons_form {
         display: grid;
+    }
+
+    #informations {
+        grid-template-columns: 1fr;
+    }
+
+    .division {
+        border-right: none;
+        margin-right: none;
     }
 }
