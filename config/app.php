@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://fretes_mauricio.test'),
+    'url' => env('APP_URL', 'https://fretesmauricio-production.up.railway.app'),
 
     /*
     |--------------------------------------------------------------------------
