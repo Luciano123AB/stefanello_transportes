@@ -20,13 +20,16 @@
 
     <div id="central_content" class="container my-5 overflow-auto">
         {{ $slot }}
-        
-        @if ($pageTitle === 'Home')
-            <div class="text-center mt-2">
-                <a href="{{ route('more_informations') }}" class="btn btn-success border-black shadow-sm">Mais Informações</a>
-            </div>
-        @endif
     </div>
+
+    @if ($pageTitle === 'Home')
+        <div class="text-center mb-5">
+            <a href="{{ route('more_informations') }}" class="btn btn-success border-black shadow-sm">
+                <iconify-icon icon="twemoji:right-arrow" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
+                Mais Informações
+            </a>
+        </div>
+    @endif
 
     @include('layouts.partials.footer')
 
