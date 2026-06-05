@@ -25,11 +25,14 @@ new class extends Component {
     @csrf
 
     <div class="d-grid">
-        <label class="fw-bold">Email:</label>
+        <label class="fw-bold">
+            <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
+            Email:
+        </label>
         <input type="email" wire:model="email" class="form-control border border-black" name="email" placeholder="exemplo@gmail.com" value="{{ old('email') }}" autofocus>
         @error('email')
             <div>                    
-                <label class="bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
                     <iconify-icon icon="mingcute:alert-line"></iconify-icon>
                     {{ $message }}
                 </label>
@@ -38,14 +41,17 @@ new class extends Component {
     </div>
 
     <div class="d-grid">
-        <label class="fw-bold">Senha:</label>
+        <label class="fw-bold">
+            <iconify-icon icon="streamline-cyber-color:key-2"></iconify-icon>
+            Senha:
+        </label>
         <div class="input-group">
             <input type="{{ $show ? 'text' : 'password' }}" wire:model="password" class="form-control border border-black" name="password" placeholder="***">
             <button type="button" class="input-group-text border-black" wire:click="showPassword()"><iconify-icon icon="{{ $show ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
         </div>
         @error('password')
             <div>
-                <label class="bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
                     <iconify-icon icon="mingcute:alert-line"></iconify-icon>
                     {{ $message }}
                 </label>

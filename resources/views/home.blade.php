@@ -1,10 +1,4 @@
 <x-main_layout :pageTitle="'Home'">
-    <h1 class="text-center mb-5">
-        <strong>Seja BEM-VINDO!</strong>
-        <br>
-        <small>ao meu Site</small>
-    </h1>
-    
     <div class="row text-white">
         <div class="col bg-dark opacity-50">
             <h2>Quem sou Eu?</h2>
