@@ -19,14 +19,25 @@
     @include('layouts.partials.navbar')
 
     <div id="central_content" class="container my-5 overflow-auto">
-        {{ $slot }}
-        
-        @if ($pageTitle === 'Home')
-            <div class="text-center mt-2">
-                <a href="{{ route('more_informations') }}" class="btn btn-success border-black shadow-sm">Mais Informações</a>
-            </div>
-        @endif
+        {{ $slot }}    
     </div>
+
+    @if ($pageTitle === 'Home')
+        <div class="text-center mb-5">
+            <a href="{{ route('more_informations') }}" class="btn btn-success border-black shadow-sm">
+                <iconify-icon icon="twemoji:right-arrow" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
+                Mais Informações
+            </a>
+        </div>
+    @endif
+    @if ($pageTitle === 'Mais Informações')
+        <div class="text-center mb-5">
+            <a href="{{ route('home') }}" class="btn btn-success border-black align-self-baseline shadow-sm">
+                <iconify-icon icon="twemoji:left-arrow" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
+                Voltar
+            </a>
+        </div>
+    @endif
 
     @include('layouts.partials.footer')
 
