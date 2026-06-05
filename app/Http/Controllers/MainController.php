@@ -9,4 +9,8 @@ class MainController extends Controller
     public function home(): View {
         return view('home');
     }
+
+    public function moreInformations(): View {
+        return view('more_informations');
+    }
 }

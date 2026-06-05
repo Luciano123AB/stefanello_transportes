@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('/')->group(function () {
     Route::controller(MainController::class)->group(function () {
         Route::get('/', 'home')->name('home');
+        
+        Route::middleware(['auth', 'verified'])->group(function () {
+            Route::get('more-informations', 'moreInformations')->name('more_informations');
+        });
     });
 
     Route::fallback(function(): RedirectResponse {
