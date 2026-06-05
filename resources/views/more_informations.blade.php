@@ -10,7 +10,6 @@
                     <li>Foto: <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-black rounded-4" width="50" height="50"></li>
                     <li>Cidade/Estado: Santa Maria/RS</li>
                     <li>Tempo de experiência: 30 anos</li>
-                    <li>Nº de Registro: ...</li>
                 </ul>
             </div>
 
