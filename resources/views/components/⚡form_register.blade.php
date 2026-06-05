@@ -7,7 +7,7 @@ new class extends Component {
     public $username;
     public $email;    
     public $password;
-    public $confirm_password;
+    public $password_confirmation;
     public $show_password = false;
     public $show_confirm = false;
 
@@ -26,7 +26,7 @@ new class extends Component {
         $this->username = '';
         $this->email = '';
         $this->password = '';
-        $this->confirm_password = '';
+        $this->password_confirmation = '';
     }
 };
 ?>
@@ -79,10 +79,10 @@ new class extends Component {
     <div class="d-grid">
         <label class="fw-bold">Confirmar Senha:</label>
         <div class="input-group">
-            <input type="{{ $show_confirm ? 'text' : 'password' }}" wire:model="confirm_password" class="form-control border border-black" name="confirm_password" placeholder="***">
+            <input type="{{ $show_confirm ? 'text' : 'password' }}" wire:model="password_confirmation" class="form-control border border-black" name="password_confirmation" placeholder="***">
             <button type="button" class="input-group-text border-black" wire:click="showConfirm()"><iconify-icon icon="{{ $show_confirm ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
         </div>
-        @error('confirm_password')
+        @error('password_confirmation')
             <div>
                 <label class="bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
                     <iconify-icon icon="mingcute:alert-line"></iconify-icon>
