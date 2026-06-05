@@ -38,7 +38,7 @@
         </h1>
     @endif
 
-    <div id="central_content" class="container my-5 overflow-auto">
+    <div class="central_content container my-5 overflow-auto">
         {{ $slot }}    
     </div>
 

@@ -22,7 +22,7 @@ body {
     background-color: #fd7e14;
 }
 
-#central_content {
+.central_content {
     max-height: 50vh;
 }
 
@@ -74,6 +74,11 @@ body {
 @media (width <= 430px) {
     body {
         background-size: 200vw 100vh;
+    }
+
+    #page_title {
+        width: 100%;
+        text-align: center;
     }
 
     #buttons_navbar {
