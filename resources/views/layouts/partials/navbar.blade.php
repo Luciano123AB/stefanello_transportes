@@ -1,6 +1,6 @@
 <nav id="top_bar" class="navbar border-5 border-warning bg-success shadow-lg">
     <div class="container-fluid">
-        <a href="{{ route('home') }}" class="buttons_navbar_color navbar-brand d-flex gap-2 align-items-center btn btn-warning border border-black rounded p-2">
+        <a href="{{ route('home') }}" class="buttons_navbar_color navbar-brand d-flex gap-2 flex-wrap align-items-center btn btn-warning border border-black rounded p-2">
             <img src="{{ asset('assets/images/icons/logo.png') }}" class="animate__animated animate__rollIn animate__infinite" height="45">
             <span class="fs-4 fw-bold">{{ config('app.name') }}:</span>
             {{ $pageTitle }}
