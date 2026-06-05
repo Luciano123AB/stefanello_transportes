@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Maurício Barbieri',
             'email' => 'mbarbieri273@gmail.com',
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('150177Mb'),
+            'password' => Hash::make('@150177Mb'),
             'role' => 'admin',
             'created_at' => Carbon::now()
         ]);
