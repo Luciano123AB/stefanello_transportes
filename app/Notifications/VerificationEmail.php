@@ -3,12 +3,20 @@
 namespace App\Notifications;
 
 use Carbon\Carbon;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\URL;
 
-class VerificationEmail extends Notification
+class VerificationEmail extends Notification implements ShouldQueue
 {
+    
+    use Queueable;
+
+    public int $tries = 3;
+    public int $timeout = 60;
+
     /**
      * Create a new notification instance.
      */
