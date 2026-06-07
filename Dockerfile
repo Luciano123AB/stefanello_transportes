@@ -33,8 +33,11 @@ RUN npm install \
 RUN chown -R www-data:www-data /var/www/html \
  && chmod -R 775 storage bootstrap/cache
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD php artisan migrate --force \
- && php artisan optimize \
- && php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
+    && php artisan optimize \
+    && php artisan config:cache \
+    && php artisan route:cache \
+    && php artisan view:cache \
+    && php artisan serve --host=0.0.0.0 --port=8080
