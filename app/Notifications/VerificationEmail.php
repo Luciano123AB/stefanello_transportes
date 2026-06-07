@@ -3,11 +3,12 @@
 namespace App\Notifications;
 
 use Carbon\Carbon;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\URL;
 
-class VerificationEmail extends Notification
+class VerificationEmail extends Notification implements ShouldQueue
 {
     /**
      * Create a new notification instance.
