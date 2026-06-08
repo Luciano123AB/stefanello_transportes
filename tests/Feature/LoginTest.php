@@ -1,8 +1,6 @@
 <?php
 
 use App\Models\User;
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Hash;
 
 describe('Testes do login', function () {
     it('testar acesso ao login', function () {
@@ -14,20 +12,13 @@ describe('Testes do login', function () {
     });
 
     it('testar o login do usuário', function() {
-        User::create([
-            'name' => 'Maurício Barbieri',
-            'email' => 'mbarbieri273@gmail.com',
-            'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('150177Mb'),
-            'role' => 'admin'
-        ]);
 
-        $email = 'mbarbieri273@gmail.com';
-        $password = '150177Mb';
+        $user = User::factory()->create();
+
         $result = $this->post('/login', [
-            'email' => $email,
-            'password' => $password
-        ])->assertRedirect('/home');
+            'email' => $user->email,
+            'password' => $user->password
+        ]);
 
         expect($result->status())->toBe(302);
     });

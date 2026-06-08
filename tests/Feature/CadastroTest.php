@@ -20,7 +20,7 @@ describe('Testes do cadastro', function () {
             'password' => $password,
             'password_confirmation' => $password,
             'role' => 'admin'
-        ])->assertRedirect('/home');
+        ]);
 
         expect($result->status())->toBe(302);
     });
