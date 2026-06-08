@@ -20,7 +20,7 @@
                     </a>
                 @endif
             @else
-                <div class="buttons_navbar_color d-grid btn btn-warning border-black">
+                <div class="buttons_navbar_color d-grid btn btn-warning border-black text-start">
                     <label>User: {{ auth()->user()->name }}</label>
                     <label>Email: {{ auth()->user()->email }}</label>
                 </div>
