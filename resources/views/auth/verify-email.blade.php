@@ -1,5 +1,5 @@
 <x-main_layout :pageTitle="'Verificação de Email'">
-    <h1 class="text-center fw-bold mb-5">Verificação</h1>
+    <h1 class="text-center fw-bold text-decoration-underline mb-5">Verificação</h1>
 
     <form action="{{ route('verification.send') }}" method="post" class="card d-grid gap-3 border border-black bg-warning shadow p-3">
         @csrf

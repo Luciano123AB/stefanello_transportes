@@ -19,19 +19,19 @@
     @include('layouts.partials.navbar')
 
     @if ($pageTitle === 'Home')
-        <h1 class="text-center mt-5">
+        <h1 class="text-center text-decoration-underline mt-5">
             <strong>Seja BEM-VINDO!</strong>
             <br>
             <small>ao meu Site</small>
         </h1>
     @elseif ($pageTitle === 'Login')
-        <h1 class="text-center mt-5">
+        <h1 class="text-center text-decoration-underline mt-5">
             <small>Formulário de</small>
             <br>
             <strong>Login</strong>
         </h1>
     @elseif ($pageTitle === 'Cadastro')
-        <h1 class="text-center mt-5">
+        <h1 class="text-center text-decoration-underline mt-5">
             <small>Formulário de</small>
             <br>
             <strong>Cadastro</strong>
