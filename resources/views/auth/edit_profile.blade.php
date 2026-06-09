@@ -14,7 +14,7 @@
                         <input type="file" class="form-control" name="image" accept="image/jpeg, image/png" required>
                         <button type="submit" class="btn btn-success border-black">
                             <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
-                            Enviar
+                            ENVIAR
                         </button>
                     </div>
                     @error('image')
@@ -96,7 +96,7 @@
                     <div class="text-center mt-3">
                         <button type="submit" class="btn btn-success border-black">
                             <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
-                            Salvar
+                            SALVAR
                         </button>
                     </div>
                 </form>
@@ -109,77 +109,7 @@
             <div class="card-body">
                 <h3 class="text-center fw-bold">Mudar Senha</h3>
 
-                <form action="{{ route('update.password') }}" method="post">
-                    @csrf
-
-                    <div class="d-grid gap-3">
-                        <div>
-                            <div class="input-group">
-                                <label class="input-group-text">Senha Atual:</label>
-                                <input type="password" class="form-control" name="current_password" placeholder="***">
-                            </div>
-                            @error('current_password')
-                                <div>
-                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
-                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
-                                        {{ $message }}
-                                    </label>
-                                </div>
-                            @enderror
-                        </div>
-                        <div>
-                            <div class="input-group">
-                                <label class="input-group-text">Nova Senha:</label>
-                                <input type="password" class="form-control" name="password" placeholder="***">
-                            </div>
-                            @error('password')
-                                <div>
-                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
-                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
-                                        {{ $message }}
-                                    </label>
-                                </div>
-                            @enderror
-                        </div>
-                        <div>
-                            <div class="input-group">
-                                <label class="input-group-text">Confirmar Senha:</label>
-                                <input type="password" class="form-control" name="password_confirmation" placeholder="***">
-                            </div>
-                            @error('password_confirmation')
-                                <div>
-                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
-                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
-                                        {{ $message }}
-                                    </label>
-                                </div>
-                            @enderror
-                        </div>
-                    </div>
-                    @error('password_error')
-                        <div class="text-start">
-                            <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
-                                <iconify-icon icon="mingcute:alert-line"></iconify-icon>
-                                {{ $message }}
-                            </label>
-                        </div>
-                    @enderror
-                    @if (session()->has('password_success'))
-                        <div class="text-start mt-1">
-                            <label class="bg-success-subtle border border-black text-success rounded px-1">
-                                <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
-                                {{ session()->get('password_success') }}
-                            </label>
-                        </div>
-                    @endif
-
-                    <div class="text-center mt-3">
-                        <button type="submit" class="btn btn-success border-black">
-                            <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
-                            Salvar
-                        </button>
-                    </div>
-                </form>
+                @livewire('⚡form_password')
             </div>
             <div class="card-footer"></div>
         </div>
