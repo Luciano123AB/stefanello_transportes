@@ -24,7 +24,7 @@
 
     @if ($pageTitle === 'Home')
         <div class="text-center mb-5">
-            <a href="{{ route('more_informations') }}" class="btn btn-success border-black shadow-sm">
+            <a href="{{ route('more.informations') }}" class="btn btn-success border-black shadow-sm">
                 <iconify-icon icon="twemoji:right-arrow" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
                 Mais Informações
             </a>
