@@ -25,6 +25,15 @@ class DataUpdate extends Controller
             return redirect()->back()->withErrors(['image' => 'Erro ao atualizar a imagem.']);
         }
 
+        foreach (Storage::disk('images')->files() as $file) {
+
+            $name = basename($file);
+
+            if (str_starts_with($name, 'owner_profile.') && $name !== 'owner_profile.' . $type_image) {
+                Storage::disk('images')->delete($file);
+            }
+        }
+
         return redirect()->back()->with('image_success', 'Imagem atualizada com sucesso.');
     }
 
