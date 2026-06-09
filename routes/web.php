@@ -9,7 +9,7 @@ Route::prefix('/')->group(function () {
         Route::get('/', 'home')->name('home');
         
         Route::middleware(['auth', 'verified'])->group(function () {
-            Route::get('more-informations', 'moreInformations')->name('more_informations');
+            Route::get('more-informations', 'moreInformations')->name('more.informations');
         });
     });
 
