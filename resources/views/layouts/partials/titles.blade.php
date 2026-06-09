@@ -15,5 +15,7 @@
         <strong>Verificação</strong>
     @elseif ($pageTitle === 'Mais Informações')
         <strong>Informações</strong>
+    @elseif ($pageTitle === 'Editar Perfil')
+        <strong>Perfil</strong>
     @endif
 </h1>

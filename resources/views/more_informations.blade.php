@@ -1,7 +1,7 @@
 <x-main_layout :pageTitle="'Mais Informações'">
     <div class="card border-black shadow">
         <div class="card-header"></div>
-        <div id="informations" class="d-grid card-body">
+        <div class="informations_data d-grid card-body">
             <div class="division overflow-auto">
                 <h3 class="fw-bold">-Dados do Profissional</h3>
 
