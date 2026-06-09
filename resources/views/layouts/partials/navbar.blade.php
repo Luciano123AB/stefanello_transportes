@@ -28,7 +28,9 @@
                     <button type="button" class="buttons_navbar_color btn btn-warning border-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="bg-warning border-top-0 border-black dropdown-menu dropdown-menu-end mt-0">
                         <div class="border-top border-bottom border-black">
-                            <li><a class="btn btn-warning dropdown-item" href="{{ route('profile.index') }}">Editar Perfil</a></li>
+                            @if ($pageTitle !== 'Editar Perfil')
+                                <li><a class="btn btn-warning dropdown-item" href="{{ route('edit.profile') }}">Editar Perfil</a></li>
+                            @endif
                         </div>
                     </ul>
                 </div>

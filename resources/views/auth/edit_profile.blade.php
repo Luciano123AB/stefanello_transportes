@@ -1,0 +1,113 @@
+<x-main_layout :pageTitle="'Editar Perfil'">
+    <div class="informations_data d-grid gap-3">
+        <div class="card border-black shadow">
+            <div class="card-header"></div>
+            <div class="card-body text-center">
+                <h3 class="fw-bold">Foto</h3>
+
+                <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-3 border-black rounded-pill mb-3" width="100" height="100">
+
+                <form action="{{ route('image.update') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+
+                    <div class="input-group">
+                        <input type="file" class="form-control" name="image" accept="image/jpeg, image/png" required>
+                        <button type="submit" class="btn btn-success border-black">
+                            <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+
+        <div class="card border-black shadow">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h3 class="text-center fw-bold">Dados Pessoais</h3>
+
+                <form action="{{ route('data.update') }}" method="post">
+                    @csrf
+
+                    <div class="d-grid gap-3">
+                        <div class="input-group">
+                            <label class="input-group-text">Usuário:</label>
+                            <input type="text" class="form-control" name="name" placeholder="Exemplo123Ab" value="{{ $data->name }}">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-group-text">Email:</label>
+                            <input type="email" class="form-control" name="email" placeholder="exemplo@gmail.com" value="{{ $data->email }}">
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-success border-black">
+                            <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                            Salvar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+
+        <div class="card border-black shadow">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h3 class="text-center fw-bold">Mudar Senha</h3>
+
+                <form action="{{ route('update.password') }}" method="post">
+                    @csrf
+
+                    <div class="d-grid gap-3">
+                        <div class="input-group">
+                            <label class="input-group-text">Senha Atual:</label>
+                            <input type="password" class="form-control" name="current_password" placeholder="***">
+                            @error('current_password')
+                                <div>
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                        {{ $message }}
+                                    </label>
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="input-group">
+                            <label class="input-group-text">Nova Senha:</label>
+                            <input type="password" class="form-control" name="password" placeholder="***">
+                            @error('password')
+                                <div>
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                        {{ $message }}
+                                    </label>
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="input-group">
+                            <label class="input-group-text">Confirmar Senha:</label>
+                            <input type="password" class="form-control" name="password_confirmation" placeholder="***">
+                            @error('password_confirmation')
+                                <div>
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                        {{ $message }}
+                                    </label>
+                                </div>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-success border-black">
+                            <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                            Salvar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</x-main_layout>

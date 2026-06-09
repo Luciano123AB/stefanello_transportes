@@ -62,7 +62,7 @@ body {
     display: flex;
 }
 
-#informations {
+.informations_data {
     grid-template-columns: 1fr 1fr;
 }
 
@@ -109,7 +109,7 @@ body {
         display: grid;
     }
 
-    #informations {
+    .informations_data {
         grid-template-columns: 1fr;
     }
 
