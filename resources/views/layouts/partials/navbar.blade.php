@@ -25,14 +25,16 @@
                         <label>User: {{ auth()->user()->name }}</label>
                         <label>Email: {{ auth()->user()->email }}</label>
                     </div>
-                    <button type="button" class="buttons_navbar_color btn btn-warning border-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                    <ul class="bg-warning border-top-0 border-black dropdown-menu dropdown-menu-end mt-0">
-                        <div class="border-top border-bottom border-black">
-                            @if ($pageTitle !== 'Editar Perfil')
-                                <li><a class="btn btn-warning dropdown-item" href="{{ route('edit.profile') }}">Editar Perfil</a></li>
-                            @endif
-                        </div>
-                    </ul>
+                    @if (auth()->user()->role === 'admin')
+                        <button type="button" class="buttons_navbar_color btn btn-warning border-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="bg-warning border-top-0 border-black dropdown-menu dropdown-menu-end mt-0">
+                            <div class="border-top border-bottom border-black">
+                                @if ($pageTitle !== 'Editar Perfil')
+                                    <li><a class="btn btn-warning dropdown-item" href="{{ route('edit.profile') }}">Editar Perfil</a></li>
+                                @endif
+                            </div>
+                        </ul>
+                    @endif
                 </div>
 
                 <form action="{{ route('logout') }}" method="post" class="buttons_navbar_color btn btn-warning align-self-center border-black shadow-sm p-0">
