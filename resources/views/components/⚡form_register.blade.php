@@ -121,4 +121,8 @@ new class extends Component {
             </button>
         </div>
     </div>
+
+    <div class="text-center">
+        <p><span class="me-1">Já tenho uma conta</span> - <a href="{{ route('login') }}" class="fw-bold text-decoration-none">Entrar</a> -</p>
+    </div>
 </form>
