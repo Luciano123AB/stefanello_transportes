@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class Update extends Controller
+class DataUpdate extends Controller
 {
     public function imageUpdate(): void {
         echo "";

@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
-use App\Http\Controllers\Update;
+use App\Http\Controllers\DataUpdate;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +16,7 @@ Route::prefix('/')->group(function () {
         });
     });
 
-    Route::controller(Update::class)->group(function () {
+    Route::controller(DataUpdate::class)->group(function () {
         Route::post('image-update', 'imageUpdate')->name('image.update');
         Route::post('data-update', 'dataUpdate')->name('data.update');
         Route::post('password-update', 'passwordUpdate')->name('update.password');
