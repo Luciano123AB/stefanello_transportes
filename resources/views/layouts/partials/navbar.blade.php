@@ -24,6 +24,7 @@
                     <label>User: {{ auth()->user()->name }}</label>
                     <label>Email: {{ auth()->user()->email }}</label>
                 </div>
+                
                 <form action="{{ route('logout') }}" method="post" class="buttons_navbar_color btn btn-warning align-self-center border-black shadow-sm p-0">
                     @csrf
 
