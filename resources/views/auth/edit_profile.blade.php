@@ -17,6 +17,22 @@
                             Enviar
                         </button>
                     </div>
+                    @error('image')
+                        <div class="text-start">
+                            <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                {{ $message }}
+                            </label>
+                        </div>
+                    @enderror
+                    @if (session()->has('image_success'))
+                        <div class="text-start">
+                            <label class="bg-success-subtle border border-black text-success rounded px-1">
+                                <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                                {{ session()->get('image_success') }}
+                            </label>
+                        </div>
+                    @endif
                 </form>
             </div>
             <div class="card-footer"></div>
@@ -31,15 +47,51 @@
                     @csrf
 
                     <div class="d-grid gap-3">
-                        <div class="input-group">
-                            <label class="input-group-text">Usuário:</label>
-                            <input type="text" class="form-control" name="name" placeholder="Exemplo123Ab" value="{{ $data->name }}">
+                        <div>
+                            <div class="input-group">
+                                <label class="input-group-text">Usuário:</label>
+                                <input type="text" class="form-control" name="name" placeholder="Exemplo123Ab" value="{{ $data->name }}">
+                            </div>
+                            @error('name')
+                                <div class="text-start">
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                        {{ $message }}
+                                    </label>
+                                </div>
+                            @enderror
                         </div>
-                        <div class="input-group">
-                            <label class="input-group-text">Email:</label>
-                            <input type="email" class="form-control" name="email" placeholder="exemplo@gmail.com" value="{{ $data->email }}">
+                        <div>
+                            <div class="input-group">
+                                <label class="input-group-text">Email:</label>
+                                <input type="email" class="form-control" name="email" placeholder="exemplo@gmail.com" value="{{ $data->email }}">
+                            </div>
+                            @error('email')
+                                <div class="text-start">
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                        <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                        {{ $message }}
+                                    </label>
+                                </div>
+                            @enderror
                         </div>
                     </div>
+                    @error('data_error')
+                        <div class="text-start">
+                            <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                {{ $message }}
+                            </label>
+                        </div>
+                    @enderror
+                    @if (session()->has('data_success'))
+                        <div class="text-start mt-1">
+                            <label class="bg-success-subtle border border-black text-success rounded px-1">
+                                <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                                {{ session()->get('data_success') }}
+                            </label>
+                        </div>
+                    @endif
 
                     <div class="text-center mt-3">
                         <button type="submit" class="btn btn-success border-black">
@@ -61,36 +113,42 @@
                     @csrf
 
                     <div class="d-grid gap-3">
-                        <div class="input-group">
-                            <label class="input-group-text">Senha Atual:</label>
-                            <input type="password" class="form-control" name="current_password" placeholder="***">
+                        <div>
+                            <div class="input-group">
+                                <label class="input-group-text">Senha Atual:</label>
+                                <input type="password" class="form-control" name="current_password" placeholder="***">
+                            </div>
                             @error('current_password')
                                 <div>
-                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
                                         <iconify-icon icon="mingcute:alert-line"></iconify-icon>
                                         {{ $message }}
                                     </label>
                                 </div>
                             @enderror
                         </div>
-                        <div class="input-group">
-                            <label class="input-group-text">Nova Senha:</label>
-                            <input type="password" class="form-control" name="password" placeholder="***">
+                        <div>
+                            <div class="input-group">
+                                <label class="input-group-text">Nova Senha:</label>
+                                <input type="password" class="form-control" name="password" placeholder="***">
+                            </div>
                             @error('password')
                                 <div>
-                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
                                         <iconify-icon icon="mingcute:alert-line"></iconify-icon>
                                         {{ $message }}
                                     </label>
                                 </div>
                             @enderror
                         </div>
-                        <div class="input-group">
-                            <label class="input-group-text">Confirmar Senha:</label>
-                            <input type="password" class="form-control" name="password_confirmation" placeholder="***">
+                        <div>
+                            <div class="input-group">
+                                <label class="input-group-text">Confirmar Senha:</label>
+                                <input type="password" class="form-control" name="password_confirmation" placeholder="***">
+                            </div>
                             @error('password_confirmation')
                                 <div>
-                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-top-0 border-black text-danger rounded px-1">
+                                    <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
                                         <iconify-icon icon="mingcute:alert-line"></iconify-icon>
                                         {{ $message }}
                                     </label>
@@ -98,6 +156,22 @@
                             @enderror
                         </div>
                     </div>
+                    @error('password_error')
+                        <div class="text-start">
+                            <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                {{ $message }}
+                            </label>
+                        </div>
+                    @enderror
+                    @if (session()->has('password_success'))
+                        <div class="text-start mt-1">
+                            <label class="bg-success-subtle border border-black text-success rounded px-1">
+                                <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                                {{ session()->get('password_success') }}
+                            </label>
+                        </div>
+                    @endif
 
                     <div class="text-center mt-3">
                         <button type="submit" class="btn btn-success border-black">

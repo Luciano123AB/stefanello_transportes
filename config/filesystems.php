@@ -60,6 +60,11 @@ return [
             'report' => false,
         ],
 
+        'images' => [
+            'driver' => 'local',
+            'root' => public_path('assets/images'),
+            'throw' => false,
+        ],
     ],
 
     /*
