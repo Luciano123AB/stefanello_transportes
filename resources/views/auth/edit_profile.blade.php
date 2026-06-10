@@ -6,7 +6,7 @@
                 <div class="card-body text-center">
                     <h3 class="fw-bold">Foto</h3>
 
-                    <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-3 border-black rounded-pill mb-3" width="100" height="100">
+                    <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-3 border-black rounded-4 mb-3" width="100" height="100">
 
                     <form action="{{ route('image.update') }}" method="post" enctype="multipart/form-data">
                         @csrf
