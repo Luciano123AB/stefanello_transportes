@@ -2,7 +2,7 @@
     <div class="card border-black shadow">
         <div class="card-header"></div>
         <div id="informations" class="d-grid card-body">
-            <div class="division overflow-auto">
+            <div class="division border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Dados do Profissional</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -13,7 +13,7 @@
                 </ul>
             </div>
 
-            <div class="overflow-auto">
+            <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Características do Veículo</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -26,7 +26,7 @@
                 </ul>
             </div>
 
-            <div class="division overflow-auto">
+            <div class="division border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Tipos de Carga</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -39,7 +39,7 @@
                 </ul>
             </div>
 
-            <div class="overflow-auto">
+            <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Regiões Atendidas</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -53,7 +53,7 @@
                 </ul>
             </div>
 
-            <div class="division overflow-auto">
+            <div class="division border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Serviços Oferecidos</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -62,7 +62,7 @@
                 </ul>
             </div>
 
-            <div class="overflow-auto">
+            <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Disponibilidade</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
