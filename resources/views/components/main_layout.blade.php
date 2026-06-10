@@ -46,5 +46,8 @@
     <img src="{{ asset('assets/images/truck_driver.png') }}" id="truck_driver" class="animate__animated animate__backInRight">
 
     @livewireScripts
+    @session('confirm')
+        @include('layouts.partials.alerts')
+    @endsession
 </body>
 </html>

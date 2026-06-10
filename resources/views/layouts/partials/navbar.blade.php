@@ -31,6 +31,7 @@
                             @if ($pageTitle !== 'Editar Perfil')
                                 <li><a class="btn btn-warning focus-ring focus-ring-warning dropdown-item" href="{{ route('edit.profile') }}">Editar Perfil</a></li>
                             @endif
+                            <li><a class="btn btn-warning focus-ring focus-ring-warning dropdown-item" href="{{ route('confirm.delete') }}">Deletar Conta</a></li>
                         </div>
                     </ul>
                 </div>
