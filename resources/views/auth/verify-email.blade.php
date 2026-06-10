@@ -6,7 +6,7 @@
             <label class="fw-bold">Email:</label>
             <div class="input-group">
                 <input type="email" wire:model="email" class="form-control border border-black" name="email" placeholder="exemplo@gmail.com" value="{{ old('email', auth()->user()->email) }}" required autofocus>
-                <button type="submit" class="btn btn-success border-black shadow-sm">
+                <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success shadow-sm">
                     <iconify-icon icon="twemoji:down-arrow" class="animate__animated animate__fadeOutDown animate__infinite"></iconify-icon>
                     Enviar
                 </button>

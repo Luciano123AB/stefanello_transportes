@@ -28,7 +28,7 @@
                 <form action="{{ route('logout') }}" method="post" class="buttons_navbar_color btn btn-warning align-self-center border-black shadow-sm p-0">
                     @csrf
 
-                    <button type="submit" class="btn">
+                    <button type="submit" class="btn focus-ring focus-ring-warning">
                         <iconify-icon icon="streamline-color:logout-1" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
                         SAIR
                     </button>
