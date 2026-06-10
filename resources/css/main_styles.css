@@ -68,7 +68,6 @@ body {
 
 .division {
     border-right: 1px solid black;
-    margin-right: 10px;
 }
 
 @media (width <= 430px) {
@@ -115,6 +114,5 @@ body {
 
     .division {
         border-right: none;
-        margin-right: none;
     }
 }
