@@ -105,7 +105,7 @@ new class extends Component {
     </div>
 
     <div class="card-footer d-flex justify-content-between bg-warning-subtle">
-        <a href="{{ route('home') }}" class="buttons_navbar_color btn btn-warning border-black align-self-baseline shadow-sm">
+        <a href="{{ route('home') }}" class="buttons_navbar_color btn btn-warning border-black align-self-baseline focus-ring focus-ring-warning shadow-sm">
             <iconify-icon icon="twemoji:left-arrow" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
             VOLTAR
         </a>
