@@ -1,47 +1,49 @@
 <x-main_layout :pageTitle="'Editar Perfil'">
     <div class="informations_data d-grid gap-3">
-        <div class="card border-black shadow">
-            <div class="card-header"></div>
-            <div class="card-body text-center">
-                <h3 class="fw-bold">Foto</h3>
+        @if ($data->role === 'admin')
+            <div class="card border-black shadow">
+                <div class="card-header"></div>
+                <div class="card-body text-center">
+                    <h3 class="fw-bold">-Foto-</h3>
 
-                <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-3 border-black rounded-pill mb-3" width="100" height="100">
+                    <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-3 border-black rounded-4 mb-3" width="100" height="100">
 
-                <form action="{{ route('image.update') }}" method="post" enctype="multipart/form-data">
-                    @csrf
+                    <form action="{{ route('image.update') }}" method="post" enctype="multipart/form-data">
+                        @csrf
 
-                    <div class="input-group">
-                        <input type="file" class="form-control" name="image" accept="image/jpeg, image/png" required>
-                        <button type="submit" class="btn btn-success border-black">
-                            <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
-                            ENVIAR
-                        </button>
-                    </div>
-                    @error('image')
-                        <div class="text-start">
-                            <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
-                                <iconify-icon icon="mingcute:alert-line"></iconify-icon>
-                                {{ $message }}
-                            </label>
-                        </div>
-                    @enderror
-                    @if (session()->has('image_success'))
-                        <div class="text-start">
-                            <label class="bg-success-subtle border border-black text-success rounded px-1">
+                        <div class="input-group">
+                            <input type="file" class="form-control" name="image" accept="image/jpeg, image/png" required>
+                            <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
                                 <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
-                                {{ session()->get('image_success') }}
-                            </label>
+                                ENVIAR
+                            </button>
                         </div>
-                    @endif
-                </form>
+                        @error('image')
+                            <div class="text-start">
+                                <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                    <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                    {{ $message }}
+                                </label>
+                            </div>
+                        @enderror
+                        @if (session()->has('image_success'))
+                            <div class="text-start">
+                                <label class="bg-success-subtle border border-black text-success rounded px-1">
+                                    <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                                    {{ session()->get('image_success') }}
+                                </label>
+                            </div>
+                        @endif
+                    </form>
+                </div>
+                <div class="card-footer"></div>
             </div>
-            <div class="card-footer"></div>
-        </div>
+        @endif
 
         <div class="card border-black shadow">
             <div class="card-header"></div>
             <div class="card-body">
-                <h3 class="text-center fw-bold">Dados Pessoais</h3>
+                <h3 class="text-center fw-bold">-Dados Pessoais-</h3>
 
                 <form action="{{ route('data.update') }}" method="post">
                     @csrf
@@ -94,7 +96,7 @@
                     @endif
 
                     <div class="text-center mt-3">
-                        <button type="submit" class="btn btn-success border-black">
+                        <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
                             <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
                             SALVAR
                         </button>
@@ -107,7 +109,7 @@
         <div class="card border-black shadow">
             <div class="card-header"></div>
             <div class="card-body">
-                <h3 class="text-center fw-bold">Mudar Senha</h3>
+                <h3 class="text-center fw-bold">-Mudar Senha-</h3>
 
                 @livewire('⚡form_password')
             </div>

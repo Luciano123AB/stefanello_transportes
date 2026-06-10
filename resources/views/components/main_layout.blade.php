@@ -26,14 +26,14 @@
 
     @if ($pageTitle === 'Home')
         <div class="text-center mb-5">
-            <a href="{{ route('more.informations') }}" class="btn btn-success border-black shadow-sm">
+            <a href="{{ route('more.informations') }}" class="btn btn-success border-black focus-ring focus-ring-success">
                 <iconify-icon icon="twemoji:right-arrow" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
                 Mais Informações
             </a>
         </div>
     @elseif ($pageTitle === 'Mais Informações')
         <div class="text-center mb-5">
-            <a href="{{ route('home') }}" class="btn btn-success border-black align-self-baseline shadow-sm">
+            <a href="{{ route('home') }}" class="btn btn-success border-black align-self-baseline focus-ring focus-ring-success">
                 <iconify-icon icon="twemoji:left-arrow" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
                 Voltar
             </a>
@@ -46,5 +46,8 @@
     <img src="{{ asset('assets/images/truck_driver.png') }}" id="truck_driver" class="animate__animated animate__backInRight">
 
     @livewireScripts
+    @session('confirm')
+        @include('layouts.partials.alerts')
+    @endsession
 </body>
 </html>

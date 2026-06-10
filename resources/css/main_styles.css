@@ -62,13 +62,12 @@ body {
     display: flex;
 }
 
-#informations {
+.informations_data {
     grid-template-columns: 1fr 1fr;
 }
 
 .division {
     border-right: 1px solid black;
-    margin-right: 10px;
 }
 
 @media (width <= 430px) {
@@ -109,12 +108,11 @@ body {
         display: grid;
     }
 
-    #informations {
+    .informations_data {
         grid-template-columns: 1fr;
     }
 
     .division {
         border-right: none;
-        margin-right: none;
     }
 }

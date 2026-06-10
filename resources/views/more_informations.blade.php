@@ -2,18 +2,18 @@
     <div class="card border-black shadow">
         <div class="card-header"></div>
         <div class="informations_data d-grid card-body">
-            <div class="division overflow-auto">
+            <div class="division border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Dados do Profissional</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Nome completo: Maurício Barbieri</li>
-                    <li>Foto: <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-black rounded-4" width="50" height="50"></li>
+                    <li>Foto: <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-2 border-black rounded-3" width="50" height="50"></li>
                     <li>Cidade/Estado: Santa Maria/RS</li>
                     <li>Tempo de experiência: 30 anos</li>
                 </ul>
             </div>
 
-            <div class="overflow-auto">
+            <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Características do Veículo</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -26,7 +26,7 @@
                 </ul>
             </div>
 
-            <div class="division overflow-auto">
+            <div class="division border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Tipos de Carga</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -39,7 +39,7 @@
                 </ul>
             </div>
 
-            <div class="overflow-auto">
+            <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Regiões Atendidas</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -53,7 +53,7 @@
                 </ul>
             </div>
 
-            <div class="division overflow-auto">
+            <div class="division border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Serviços Oferecidos</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
@@ -62,7 +62,7 @@
                 </ul>
             </div>
 
-            <div class="overflow-auto">
+            <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">-Disponibilidade</h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
