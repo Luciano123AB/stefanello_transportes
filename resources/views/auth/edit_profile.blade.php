@@ -13,7 +13,7 @@
 
                         <div class="input-group">
                             <input type="file" class="form-control" name="image" accept="image/jpeg, image/png" required>
-                            <button type="submit" class="btn btn-success border-black">
+                            <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
                                 <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
                                 ENVIAR
                             </button>
@@ -96,7 +96,7 @@
                     @endif
 
                     <div class="text-center mt-3">
-                        <button type="submit" class="btn btn-success border-black">
+                        <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
                             <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
                             SALVAR
                         </button>

@@ -43,7 +43,7 @@ new class extends Component {
             <div class="input-group">
                 <label class="input-group-text">Senha Atual:</label>
                 <input type="{{ $show_current_password ? 'text' : 'password' }}" wire:model="current_password" class="form-control" name="current_password" placeholder="***">
-                <button type="button" class="input-group-text" wire:click="showCurrentPassword()"><iconify-icon icon="{{ $show_current_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
+                <button type="button" class="input-group-text focus-ring" wire:click="showCurrentPassword()"><iconify-icon icon="{{ $show_current_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
             </div>
             @error('current_password')
                 <div>
@@ -58,7 +58,7 @@ new class extends Component {
             <div class="input-group">
                 <label class="input-group-text">Nova Senha:</label>
                 <input type="{{ $show_password ? 'text' : 'password' }}" wire:model="password" class="form-control" name="password" placeholder="***">
-                <button type="button" class="input-group-text" wire:click="showPassword()"><iconify-icon icon="{{ $show_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
+                <button type="button" class="input-group-text focus-ring" wire:click="showPassword()"><iconify-icon icon="{{ $show_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
             </div>
             @error('password')
                 <div>
@@ -73,7 +73,7 @@ new class extends Component {
             <div class="input-group">
                 <label class="input-group-text">Confirmar Senha:</label>
                 <input type="{{ $show_confirm ? 'text' : 'password' }}" wire:model="password_confirmation" class="form-control" name="password_confirmation" placeholder="***">
-                <button type="button" class="input-group-text" wire:click="showConfirm()"><iconify-icon icon="{{ $show_confirm ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
+                <button type="button" class="input-group-text focus-ring" wire:click="showConfirm()"><iconify-icon icon="{{ $show_confirm ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
             </div>
             @error('password_confirmation')
                 <div>
@@ -103,11 +103,11 @@ new class extends Component {
     @endif
 
     <div class="text-center mt-3">
-        <button type="button" class="btn btn-danger border-black shadow-sm" wire:click="clearInputs()">
+        <button type="button" class="btn btn-danger border-black focus-ring focus-ring-danger shadow-sm" wire:click="clearInputs()">
             <iconify-icon icon="glyphs-poly:trash-1" class="animate__animated animate__bounceOut animate__infinite"></iconify-icon>
             LIMPAR
         </button>
-        <button type="submit" class="btn btn-success border-black">
+        <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
             <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
             SALVAR
         </button>

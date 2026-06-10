@@ -25,7 +25,7 @@
                         <label>User: {{ auth()->user()->name }}</label>
                         <label>Email: {{ auth()->user()->email }}</label>
                     </div>
-                    <button type="button" class="buttons_navbar_color btn btn-warning border-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <button type="button" class="buttons_navbar_color btn btn-warning border-black dropdown-toggle dropdown-toggle-split focus-ring focus-ring-warning" data-bs-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="bg-warning border-top-0 border-black dropdown-menu dropdown-menu-end mt-0">
                         <div class="border-top border-bottom border-black">
                             @if ($pageTitle !== 'Editar Perfil')
@@ -38,7 +38,7 @@
                 <form action="{{ route('logout') }}" method="post" class="buttons_navbar_color btn btn-warning align-self-center border-black shadow-sm p-0">
                     @csrf
 
-                    <button type="submit" class="btn">
+                    <button type="submit" class="btn focus-ring focus-ring-warning">
                         <iconify-icon icon="streamline-color:logout-1" class="animate__animated animate__fadeOutRight animate__infinite"></iconify-icon>
                         SAIR
                     </button>
