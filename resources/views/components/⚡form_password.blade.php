@@ -103,7 +103,7 @@ new class extends Component {
     @endif
 
     <div class="text-center mt-3">
-        <button type="button" class="btn btn-danger border-black focus-ring focus-ring-danger shadow-sm" wire:click="clearInputs()">
+        <button type="button" class="btn btn-danger border-black focus-ring focus-ring-danger" wire:click="clearInputs()">
             <iconify-icon icon="glyphs-poly:trash-1" class="animate__animated animate__bounceOut animate__infinite"></iconify-icon>
             LIMPAR
         </button>

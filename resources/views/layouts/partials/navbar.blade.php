@@ -8,13 +8,13 @@
         <div id="buttons_navbar" class="d-flex gap-2">
             @guest
                 @if ($pageTitle !== 'Cadastro')
-                    <a href="{{ route('register') }}" class="buttons_navbar_color btn btn-warning border-black focus-ring focus-ring-warning shadow-sm">
+                    <a href="{{ route('register') }}" class="buttons_navbar_color btn btn-warning border-black focus-ring focus-ring-warning">
                         <iconify-icon icon="streamline-color:user-add-plus" class="animate__animated animate__heartBeat animate__infinite"></iconify-icon>
                         CADASTRAR
                     </a>
                 @endif
                 @if ($pageTitle !== 'Login')
-                    <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black focus-ring focus-ring-warning shadow-sm">
+                    <a href="{{ route('login') }}" class="buttons_navbar_color btn btn-warning border-black focus-ring focus-ring-warning">
                         <iconify-icon icon="streamline-color:login-1" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
                         ENTRAR
                     </a>
