@@ -17,9 +17,11 @@ Route::prefix('/')->group(function () {
     });
 
     Route::controller(DataUpdate::class)->group(function () {
-        Route::post('image-update', 'imageUpdate')->name('image.update');
-        Route::post('data-update', 'dataUpdate')->name('data.update');
-        Route::post('password-update', 'passwordUpdate')->name('update.password');
+        Route::middleware(['auth', 'verified'])->group(function () {
+            Route::post('image-update', 'imageUpdate')->name('image.update');
+            Route::post('data-update', 'dataUpdate')->name('data.update');
+            Route::post('password-update', 'passwordUpdate')->name('update.password');
+        });
     });
 
     Route::fallback(function(): RedirectResponse {
