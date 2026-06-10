@@ -4,7 +4,7 @@
             <div class="card border-black shadow">
                 <div class="card-header"></div>
                 <div class="card-body text-center">
-                    <h3 class="fw-bold">Foto</h3>
+                    <h3 class="fw-bold">-Foto-</h3>
 
                     <img src="{{ asset('assets/images/owner_profile.png') }}" class="border border-3 border-black rounded-4 mb-3" width="100" height="100">
 
@@ -43,7 +43,7 @@
         <div class="card border-black shadow">
             <div class="card-header"></div>
             <div class="card-body">
-                <h3 class="text-center fw-bold">Dados Pessoais</h3>
+                <h3 class="text-center fw-bold">-Dados Pessoais-</h3>
 
                 <form action="{{ route('data.update') }}" method="post">
                     @csrf
@@ -109,7 +109,7 @@
         <div class="card border-black shadow">
             <div class="card-header"></div>
             <div class="card-body">
-                <h3 class="text-center fw-bold">Mudar Senha</h3>
+                <h3 class="text-center fw-bold">-Mudar Senha-</h3>
 
                 @livewire('⚡form_password')
             </div>
