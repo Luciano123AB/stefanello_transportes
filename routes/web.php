@@ -26,7 +26,7 @@ Route::prefix('/')->group(function () {
     });
 
     Route::controller(UserDelete::class)->group(function () {
-        Route::middleware(['auth', 'verified'])->group(function () {
+        Route::middleware(['auth'])->group(function () {
             Route::get('confirm-delete', 'confirmDelete')->name('confirm.delete');
             Route::delete('delete/{id}', 'delete')->name('delete');
         });
