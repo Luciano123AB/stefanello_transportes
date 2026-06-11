@@ -11,7 +11,7 @@
         title: "<label class='py-2'>Excluir Conta?</label>",
         text: "Tem certeza que deseja excluir sua conta? Essa ação é irreversível.",
         showConfirmButton: false,
-        footer: "<div class='d-flex'>" +
+        footer: "<div class='d-flex justify-content-between'>" +
                     "<a href='' class='btn btn-danger border-black focus-ring focus-ring-danger me-1'>" +
                         "<iconify-icon icon='boxicons:dislike-filled' class='animate__animated animate__tada animate__infinite'></iconify-icon>" +
                         "CANCELAR" +
