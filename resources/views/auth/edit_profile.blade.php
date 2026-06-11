@@ -12,6 +12,7 @@
                         @csrf
 
                         <div class="input-group">
+                            <iconify-icon icon="fluent-color:image-32" class="input-group-text"></iconify-icon>
                             <input type="file" class="form-control" name="image" accept="image/jpeg, image/png" required>
                             <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
                                 <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
@@ -51,7 +52,10 @@
                     <div class="d-grid gap-3">
                         <div>
                             <div class="input-group">
-                                <label class="input-group-text">Usuário:</label>
+                                <label class="input-group-text gap-1">
+                                    <iconify-icon icon="streamline-plump-color:user-pin"></iconify-icon>
+                                    Usuário:
+                                </label>
                                 <input type="text" class="form-control" name="name" placeholder="Exemplo123Ab" value="{{ $data->name }}">
                             </div>
                             @error('name')
@@ -65,7 +69,10 @@
                         </div>
                         <div>
                             <div class="input-group">
-                                <label class="input-group-text">Email:</label>
+                                <label class="input-group-text gap-1">
+                                    <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
+                                    Email:
+                                </label>
                                 <input type="email" class="form-control" name="email" placeholder="exemplo@gmail.com" value="{{ $data->email }}">
                             </div>
                             @error('email')

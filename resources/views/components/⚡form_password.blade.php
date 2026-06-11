@@ -41,7 +41,10 @@ new class extends Component {
     <div class="d-grid gap-3">
         <div>
             <div class="input-group">
-                <label class="input-group-text">Senha Atual:</label>
+                <label class="input-group-text gap-1">
+                    <iconify-icon icon="streamline-cyber-color:key-2"></iconify-icon>
+                    Senha Atual:
+                </label>
                 <input type="{{ $show_current_password ? 'text' : 'password' }}" wire:model="current_password" class="form-control" name="current_password" placeholder="***">
                 <button type="button" class="input-group-text focus-ring" wire:click="showCurrentPassword()"><iconify-icon icon="{{ $show_current_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
             </div>
@@ -56,7 +59,10 @@ new class extends Component {
         </div>
         <div>
             <div class="input-group">
-                <label class="input-group-text">Nova Senha:</label>
+                <label class="input-group-text gap-1">
+                    <iconify-icon icon="streamline-cyber-color:key-2"></iconify-icon>
+                    Nova Senha:
+                </label>
                 <input type="{{ $show_password ? 'text' : 'password' }}" wire:model="password" class="form-control" name="password" placeholder="***">
                 <button type="button" class="input-group-text focus-ring" wire:click="showPassword()"><iconify-icon icon="{{ $show_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
             </div>
@@ -71,7 +77,10 @@ new class extends Component {
         </div>
         <div>
             <div class="input-group">
-                <label class="input-group-text">Confirmar Senha:</label>
+                <label class="input-group-text gap-1">
+                    <iconify-icon icon="streamline-cyber-color:key-2"></iconify-icon>
+                    Confirmar Senha:
+                </label>
                 <input type="{{ $show_confirm ? 'text' : 'password' }}" wire:model="password_confirmation" class="form-control" name="password_confirmation" placeholder="***">
                 <button type="button" class="input-group-text focus-ring" wire:click="showConfirm()"><iconify-icon icon="{{ $show_confirm ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
             </div>
