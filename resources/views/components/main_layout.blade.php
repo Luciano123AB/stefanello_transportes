@@ -31,7 +31,7 @@
                 Mais Informações
             </a>
         </div>
-    @elseif ($pageTitle === 'Mais Informações')
+    @elseif ($pageTitle === 'Mais Informações' || $pageTitle === 'Editar Perfil')
         <div class="text-center mb-5">
             <a href="{{ route('home') }}" class="btn btn-success border-black align-self-baseline focus-ring focus-ring-success">
                 <iconify-icon icon="twemoji:left-arrow" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>

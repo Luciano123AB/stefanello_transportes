@@ -8,10 +8,10 @@
         customClass: {
             image: "animate__animated animate__rollIn animate__infinite"
         },
-        title: "<label class='py-2'>Excluir Conta?</label>",
+        title: "<label class='fw-bold text-decoration-underline py-2'>Excluir Conta?</label>",
         text: "Tem certeza que deseja excluir sua conta? Essa ação é irreversível.",
         showConfirmButton: false,
-        footer: "<div class='d-flex'>" +
+        footer: "<div class='d-flex justify-content-between bg-warning-subtle rounded p-1'>" +
                     "<a href='' class='btn btn-danger border-black focus-ring focus-ring-danger me-1'>" +
                         "<iconify-icon icon='boxicons:dislike-filled' class='animate__animated animate__tada animate__infinite'></iconify-icon>" +
                         "CANCELAR" +
