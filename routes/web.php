@@ -22,11 +22,12 @@ Route::prefix('/')->group(function () {
             Route::post('image-update', 'imageUpdate')->name('image.update');
             Route::post('data-update', 'dataUpdate')->name('data.update');
             Route::post('password-update', 'passwordUpdate')->name('update.password');
+            Route::post('contacts-update', 'contactsUpdate')->name('contacts.update');
         });
     });
 
     Route::controller(UserDelete::class)->group(function () {
-        Route::middleware(['auth', 'verified'])->group(function () {
+        Route::middleware(['auth'])->group(function () {
             Route::get('confirm-delete', 'confirmDelete')->name('confirm.delete');
             Route::delete('delete/{id}', 'delete')->name('delete');
         });

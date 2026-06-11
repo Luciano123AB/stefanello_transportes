@@ -77,6 +77,22 @@
                                 </div>
                             @enderror
                         </div>
+                        @if ($data->role === 'admin')
+                            <div>
+                                <div class="input-group">
+                                    <label class="input-group-text">CNPJ:</label>
+                                    <input type="text" class="form-control" name="cnpj" placeholder="exemplo@gmail.com" value="{{ $other_data->cnpj }}">
+                                </div>
+                                @error('cnpj')
+                                    <div class="text-start">
+                                        <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                            <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                            {{ $message }}
+                                        </label>
+                                    </div>
+                                @enderror
+                            </div>
+                        @endif
                     </div>
                     @error('data_error')
                         <div class="text-start">
@@ -115,5 +131,73 @@
             </div>
             <div class="card-footer"></div>
         </div>
+
+        @if ($data->role === 'admin')
+            <div class="card border-black shadow">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <h3 class="text-center fw-bold">-Contatos-</h3>
+
+                    <form action="{{ route('contacts.update') }}" method="post">
+                        @csrf
+
+                        <div class="d-grid gap-3">
+                            <div>
+                                <div class="input-group">
+                                    <label class="input-group-text">Whatsapp:</label>
+                                    <input type="text" class="form-control" name="whatsapp" placeholder="(99) 99999-9999" value="{{ $other_data->whatsapp }}">
+                                </div>
+                                @error('whatsapp')
+                                    <div class="text-start">
+                                        <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                            <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                            {{ $message }}
+                                        </label>
+                                    </div>
+                                @enderror
+                            </div>
+                            <div>
+                                <div class="input-group">
+                                    <label class="input-group-text">Telefone:</label>
+                                    <input type="text" class="form-control" name="phone" placeholder="(99) 99999-9999" value="{{ $other_data->phone }}">
+                                </div>
+                                @error('phone')
+                                    <div class="text-start">
+                                        <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                            <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                            {{ $message }}
+                                        </label>
+                                    </div>
+                                @enderror
+                            </div>
+                        </div>
+                        @error('contacts_error')
+                            <div class="text-start">
+                                <label class="animate__animated animate__shakeX bg-danger-subtle border border-black text-danger rounded px-1">
+                                    <iconify-icon icon="mingcute:alert-line"></iconify-icon>
+                                    {{ $message }}
+                                </label>
+                            </div>
+                        @enderror
+                        @if (session()->has('contacts_success'))
+                            <div class="text-start mt-1">
+                                <label class="bg-success-subtle border border-black text-success rounded px-1">
+                                    <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                                    {{ session()->get('contacts_success') }}
+                                </label>
+                            </div>
+                        @endif
+
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
+                                <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
+                                SALVAR
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        @endif
     </div>
 </x-main_layout>
