@@ -40,7 +40,7 @@
         </div>
     @endif
 
-    @include('layouts.partials.footer')
+    <x-footer></x-footer>
 
     <img src="{{ asset('assets/images/truck.png') }}" id="truck" class="animate__animated animate__fadeInLeft">
     <img src="{{ asset('assets/images/truck_driver.png') }}" id="truck_driver" class="animate__animated animate__backInRight">

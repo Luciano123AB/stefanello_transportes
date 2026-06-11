@@ -1,5 +1,13 @@
 <?php
 
+use Database\Factories\DataFactory;
+use Database\Factories\UserFactory;
+
+beforeEach(function () {
+    DataFactory::new()->create();
+    UserFactory::new()->create();
+});
+
 describe('Testes do cadastro', function () {
     it('testar acesso ao cadastro', function () {
         expect($this->get('/register')->status())->toBe(200);

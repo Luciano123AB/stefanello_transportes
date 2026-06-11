@@ -1,6 +1,13 @@
 <?php
 
 use App\Models\User;
+use Database\Factories\DataFactory;
+use Database\Factories\UserFactory;
+
+beforeEach(function () {
+    DataFactory::new()->create();
+    UserFactory::new()->create();
+});
 
 describe('Testes do login', function () {
     it('testar acesso ao login', function () {

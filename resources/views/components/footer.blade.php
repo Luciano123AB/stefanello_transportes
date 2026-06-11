@@ -10,7 +10,7 @@
     <div class="bg-light border border-black align-self-center rounded p-1 overflow-hidden">
         <div class="animate__animated animate__fadeInLeft">
             <iconify-icon icon="streamline-emojis:office-building"></iconify-icon>
-            CNPJ: 33.589.582/0001-42
+            CNPJ: {{ $data_admin->cnpj }}
         </div>
     </div>
 
@@ -18,15 +18,15 @@
         <label class="fw-bold text-center">Contatos:</label>
         <div class="animate__animated animate__fadeInLeft">
             <iconify-icon icon="streamline-cyber-color:email-2"></iconify-icon>
-            Email: mbarbieri273@gmail.com
+            Email: {{ $email_admin }}
         </div>
         <div class="animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
             <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
-            Whatsapp: (55) 99629-4129
+            Whatsapp: {{ $data_admin->whatsapp }}
         </div>
         <div class="animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
             <iconify-icon icon="streamline-plump-color:phone"></iconify-icon>
-            Telefone: (55) 99629-4129
+            Telefone: {{ $data_admin->phone }}
         </div>
     </div>
 </footer>

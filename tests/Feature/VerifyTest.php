@@ -1,6 +1,13 @@
 <?php
 
+use Database\Factories\DataFactory;
+use Database\Factories\UserFactory;
 use Database\Factories\UserUnverifiedFactory;
+
+beforeEach(function () {
+    DataFactory::new()->create();
+    UserFactory::new()->create();
+});
 
 describe('Testes da verificação', function () {
     it('testar acesso a verificação', function () {

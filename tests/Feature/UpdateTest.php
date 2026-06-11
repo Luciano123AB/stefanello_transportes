@@ -1,6 +1,11 @@
 <?php
 
+use Database\Factories\DataFactory;
 use Database\Factories\UserFactory;
+
+beforeEach(function () {
+    DataFactory::new()->create();
+});
 
 describe('Testes do editar perfil', function () {
     it('testar acesso ao editar perfil', function () {
@@ -51,7 +56,8 @@ describe('Testes do editar perfil', function () {
 
         $result = $this->post('/data-update', [
             'name' => $user->name,
-            'email' => $user->email
+            'email' => $user->email,
+            'cnpj' => $user->cnpj
         ]);
 
         expect($result->status())->toBe(302);
@@ -66,6 +72,21 @@ describe('Testes do editar perfil', function () {
         $result = $this->post('/password-update', [
             'password' => $user->password,
             'password_confirmation' => $user->password
+        ]);
+
+        expect($result->status())->toBe(302);
+    });
+
+    it('testar atualização dos contatos', function () {
+
+        $user = UserFactory::new()->create();
+
+        $this->actingAs($user);
+
+        $result = $this->post('/contacts-update', [
+            'cnpj' => $user->cnpj,
+            'whatsapp' => $user->phone,
+            'phone' => $user->phone
         ]);
 
         expect($result->status())->toBe(302);
