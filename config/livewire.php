@@ -44,7 +44,7 @@ return [
     |
     */
 
-    'component_layout' => 'components::main_layout',
+    'component_layout' => 'components::main-layout',
 
     /*
     |---------------------------------------------------------------------------
