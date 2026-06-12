@@ -31,14 +31,14 @@
                 Mais Informações
             </a>
         </div>
-    @elseif ($pageTitle === 'Mais Informações' || $pageTitle === 'Editar Perfil' || $pageTitle === 'Arquivos')
+    @elseif ($pageTitle === 'Mais Informações' || $pageTitle === 'Editar Perfil' || $pageTitle === 'Meus Arquivos')
         <div class="text-center mb-5">
             <a href="{{ route('home') }}" class="btn btn-success border-black align-self-baseline focus-ring focus-ring-success">
                 <iconify-icon icon="twemoji:left-arrow" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>
                 Voltar
             </a>
         </div>
-    @elseif ($pageTitle === 'Visualização')
+    @elseif ($pageTitle === 'Visualizar Arquivo')
         <div class="text-center mb-5">
             <a href="{{ route('file.list') }}" class="btn btn-success border-black align-self-baseline focus-ring focus-ring-success">
                 <iconify-icon icon="twemoji:left-arrow" class="animate__animated animate__fadeOutLeft animate__infinite"></iconify-icon>

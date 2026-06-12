@@ -1,4 +1,4 @@
-<x-main_layout :pageTitle="'Visualização'">
+<x-main_layout :pageTitle="'Visualizar Arquivo'">
     <div class="bg-light border border-black">
         <img src="{{ asset('assets/images/documents/' . $name) }}" id="file_view" class="img-fluid shadow" width="100%">
     </div>
