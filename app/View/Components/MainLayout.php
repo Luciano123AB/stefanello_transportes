@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class main_layout extends Component
+class MainLayout extends Component
 {
 
     public $pageTitle;
@@ -24,6 +24,6 @@ class main_layout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.main_layout');
+        return view('components.main-layout');
     }
 }
