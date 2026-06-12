@@ -11,15 +11,15 @@
         <small>Formulário de</small>
         <br>
         <strong>Cadastro</strong>
-    @elseif ($pageTitle === 'Verificação de Email')
-        <strong>Verificação</strong>
-    @elseif ($pageTitle === 'Mais Informações')
-        <strong>Informações</strong>
-    @elseif ($pageTitle === 'Editar Perfil')
-        <strong>Perfil</strong>
-    @elseif ($pageTitle === 'Meus Arquivos')
-        <strong>Arquivos</strong>
+    @elseif ($pageTitle === 'Verificação')
+        <strong>Verificação de Email</strong>
+    @elseif ($pageTitle === 'Informações')
+        <strong>Mais Informações</strong>
+    @elseif ($pageTitle === 'Perfil')
+        <strong>Editar Perfil</strong>
+    @elseif ($pageTitle === 'Arquivos')
+        <strong>Meus Arquivos</strong>
     @else
-        <strong>Visualização</strong>
+        <strong>Visualizar Arquivo</strong>
     @endif
 </h1>

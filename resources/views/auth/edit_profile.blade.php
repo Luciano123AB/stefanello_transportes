@@ -1,4 +1,4 @@
-<x-main-layout :pageTitle="'Editar Perfil'">
+<x-main-layout :pageTitle="'Perfil'">
     <div class="informations_data d-grid gap-3">
         @if ($data->role === 'admin')
             <div class="card border-black shadow">

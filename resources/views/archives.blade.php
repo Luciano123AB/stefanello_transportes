@@ -1,4 +1,4 @@
-<x-main-layout :pageTitle="'Meus Arquivos'">
+<x-main-layout :pageTitle="'Arquivos'">
     <form action="{{ route('file.upload') }}" method="post" class="mb-1" enctype="multipart/form-data">
         @csrf
 
