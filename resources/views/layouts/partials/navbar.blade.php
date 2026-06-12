@@ -28,7 +28,7 @@
                     <button type="button" class="buttons_navbar_color btn btn-warning border-black dropdown-toggle dropdown-toggle-split focus-ring focus-ring-warning" data-bs-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="bg-warning border-top-0 border-black dropdown-menu dropdown-menu-end mt-0">
                         <div class="border-top border-bottom border-black">
-                            @if ($pageTitle !== 'Arquivos')
+                            @if ($pageTitle !== 'Arquivos' && auth()->user()->role === 'admin')
                                 <li><a class="btn btn-warning focus-ring focus-ring-warning dropdown-item" href="{{ route('file.list') }}">Meus Arquivos</a></li>
                             @endif
                             @if ($pageTitle !== 'Mais Informações')
