@@ -65,6 +65,12 @@ return [
             'root' => public_path('assets/images'),
             'throw' => false,
         ],
+
+        'documents' => [
+            'driver' => 'local',
+            'root' => public_path('assets/images/documents'),
+            'throw' => false,
+        ],
     ],
 
     /*
