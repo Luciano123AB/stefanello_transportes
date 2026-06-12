@@ -40,7 +40,7 @@ Route::prefix('/')->group(function () {
     });
 
     Route::controller(Archives::class)->group(function () {
-        Route::middleware(['auth', 'verified'])->group(function () {            
+        Route::middleware(['auth', 'verified', IsAdmin::class])->group(function () {            
             Route::post('file-upload', 'fileUpload')->name('file.upload');
             Route::get('file-view/{name}', 'fileView')->name('file.view');
             Route::get('file-download/{name}', 'fileDownload')->name('file.download');
