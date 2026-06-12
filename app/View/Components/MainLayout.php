@@ -2,25 +2,21 @@
 
 namespace App\View\Components;
 
-use App\Models\Data;
-use App\Models\User;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class footer extends Component
+class MainLayout extends Component
 {
 
-    public $data_admin;
-    public $email_admin;
+    public $pageTitle;
 
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(string $pageTitle)
     {
-        $this->data_admin = Data::first();
-        $this->email_admin = User::where('role', 'admin')->first()->email;
+        $this->pageTitle = $pageTitle;
     }
 
     /**
@@ -28,6 +24,6 @@ class footer extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.footer');
+        return view('components.main-layout');
     }
 }
