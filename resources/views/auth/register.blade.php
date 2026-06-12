@@ -1,3 +1,3 @@
-<x-main-layout :pageTitle="'Cadastro'">
+<x-main_layout :pageTitle="'Cadastro'">
     @livewire('⚡form_register')
-</x-main-layout>
+</x-main_layout>

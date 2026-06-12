@@ -17,5 +17,9 @@
         <strong>Informações</strong>
     @elseif ($pageTitle === 'Editar Perfil')
         <strong>Perfil</strong>
+    @elseif ($pageTitle === 'Meus Arquivos')
+        <strong>Arquivos</strong>
+    @else
+        <strong>Visualização</strong>
     @endif
 </h1>

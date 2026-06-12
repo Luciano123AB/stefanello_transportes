@@ -1,4 +1,4 @@
-<x-main-layout :pageTitle="'Verificação de Email'">
+<x-main_layout :pageTitle="'Verificação de Email'">
     <form action="{{ route('verification.send') }}" method="post" class="card d-grid gap-3 border border-black bg-warning shadow p-3">
         @csrf
 
@@ -25,4 +25,4 @@
             @endif
         </div>
     </form>
-</x-main-layout>
+</x-main_layout>

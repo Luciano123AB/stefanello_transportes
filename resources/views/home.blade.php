@@ -1,4 +1,4 @@
-<x-main-layout :pageTitle="'Home'">
+<x-main_layout :pageTitle="'Home'">
     <div class="row text-white">
         <div class="col bg-dark opacity-50">
             <h2>Quem sou Eu?</h2>
@@ -35,4 +35,4 @@
             </div>
         </div>
     </div>
-</x-main-layout>
+</x-main_layout>

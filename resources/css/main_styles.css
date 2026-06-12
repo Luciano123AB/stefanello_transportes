@@ -70,6 +70,26 @@ body {
     border-right: 1px solid black;
 }
 
+#column_preview {
+    width: 70px;
+}
+
+#column_size {
+    width: 80px;
+}
+
+#column_date {
+    width: 170px;
+}
+
+#column_options {
+    width: 220px;
+}
+
+#file_view {
+    height: 100vh;
+}
+
 @media (width <= 430px) {
     body {
         background-size: 200vw 100vh;
@@ -114,5 +134,9 @@ body {
 
     .division {
         border-right: none;
+    }
+
+    #file_view {
+        height: 50vh;
     }
 }

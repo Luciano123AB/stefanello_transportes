@@ -1,3 +1,3 @@
-<x-main-layout :pageTitle="'Login'">
+<x-main_layout :pageTitle="'Login'">
     @livewire('⚡form_login')
-</x-main-layout>
+</x-main_layout>
