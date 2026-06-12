@@ -4,6 +4,7 @@ use App\Http\Controllers\Archives;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\DataUpdate;
 use App\Http\Controllers\UserDelete;
+use App\Http\Middleware\IsAdmin;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,9 @@ Route::prefix('/')->group(function () {
 
             Route::get('edit-profile', 'editProfile')->name('edit.profile');
 
-            Route::get('file-list', 'fileList')->name('file.list');
+            Route::middleware([IsAdmin::class])->group(function () {  
+                Route::get('file-list', 'fileList')->name('file.list');
+            });
         });
     });
 
