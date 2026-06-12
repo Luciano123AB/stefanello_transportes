@@ -161,7 +161,7 @@ return [
     'string' => 'The :attribute field must be a string.',
     'timezone' => 'The :attribute field must be a valid timezone.',
     'unique' => 'O :attribute já foi usado.',
-    'uploaded' => 'The :attribute failed to upload.',
+    'uploaded' => 'O :attribute não conseguiu ser enviado.',
     'uppercase' => 'The :attribute field must be uppercase.',
     'url' => 'The :attribute field must be a valid URL.',
     'ulid' => 'The :attribute field must be a valid ULID.',
