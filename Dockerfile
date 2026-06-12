@@ -36,6 +36,7 @@ RUN chown -R www-data:www-data /var/www/html \
 EXPOSE 8080
 
 CMD php artisan migrate --force \
+    && php artisan db:seed \
     && php artisan optimize \
     && php artisan config:cache \
     && php artisan route:cache \
