@@ -1,4 +1,4 @@
-<x-main_layout :pageTitle="'Editar Perfil'">
+<x-main-layout :pageTitle="'Editar Perfil'">
     <div class="informations_data d-grid gap-3">
         @if ($data->role === 'admin')
             <div class="card border-black shadow">
@@ -216,4 +216,4 @@
             </div>
         @endif
     </div>
-</x-main_layout>
+</x-main-layout>
