@@ -1,4 +1,4 @@
-<x-main_layout :pageTitle="'Mais Informações'">
+<x-main-layout :pageTitle="'Mais Informações'">
     <div class="card border-black shadow">
         <div class="card-header"></div>
         <div class="informations_data d-grid card-body">
@@ -92,4 +92,4 @@
         </div>
         <div class="card-footer"></div>
     </div>
-</x-main_layout>
+</x-main-layout>
