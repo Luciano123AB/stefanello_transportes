@@ -1,4 +1,4 @@
-<x-main-layout :pageTitle="'Mais Informações'">
+<x-main-layout :pageTitle="'Informações'">
     <div class="card border-black shadow">
         <div class="card-header"></div>
         <div id="informations" class="d-grid card-body">

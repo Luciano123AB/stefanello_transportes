@@ -11,9 +11,9 @@
         <small>Formulário de</small>
         <br>
         <strong>Cadastro</strong>
-    @elseif ($pageTitle === 'Verificação de Email')
-        <strong>Verificação</strong>
-    @elseif ($pageTitle === 'Mais Informações')
-        <strong>Informações</strong>
+    @elseif ($pageTitle === 'Verificação')
+        <strong>Verificação de Email</strong>
+    @elseif ($pageTitle === 'Informações')
+        <strong>Mais Informações</strong>
     @endif
 </h1>
