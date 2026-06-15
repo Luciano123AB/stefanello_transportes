@@ -19,7 +19,7 @@
             <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">
                     <iconify-icon icon="glyphs-poly:truck" class="informations_margin informations_icons_margin"></iconify-icon>
-                    Características do Veículo
+                    Características do Veícul o
                 </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
