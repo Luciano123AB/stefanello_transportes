@@ -47,7 +47,7 @@
                         </td>
                         <td class="border-end">{{ $file['name'] }}</td>
                         <td class="border-end text-center">{{ $file['size'] }}</td>
-                        <td class="border-end text-center">{{ $file['last_modified']->format('d/m/Y H:i:s') }}</td>
+                        <td class="border-end text-center">{{ $file['last_modified'] }}</td>
                         <td class="text-center">
                             <div class="d-flex gap-1 justify-content-center">
                                 <a href="{{ route('file.download', $file['name']) }}" class="btn btn-sm btn-success border-black focus-ring focus-ring-success">
