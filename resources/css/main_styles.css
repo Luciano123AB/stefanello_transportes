@@ -67,7 +67,7 @@ body {
 }
 
 .informations_margin {
-    margin-start: 5px;
+    margin-left: 5px;
 }
 
 .division {
@@ -142,7 +142,7 @@ body {
     }
 
     .informations_margin {
-        margin-start: none;
+        margin-left: none;
         margin-top: 5px;
     }
 
