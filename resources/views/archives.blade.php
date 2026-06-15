@@ -3,8 +3,12 @@
         @csrf
 
         <div class="input-group">
-            <iconify-icon icon="fluent-color:image-32" class="input-group-text border-black"></iconify-icon>
-            <input type="file" class="form-control border-black" name="file" accept="image/jpeg, image/png" required>
+            <div class="input-group-text border-black">
+                <iconify-icon icon="fluent-color:image-32"></iconify-icon>
+                <->
+                <iconify-icon icon="fluent-color:document-16"></iconify-icon>                
+            </div>
+            <input type="file" class="form-control border-black" name="file" accept="application/pdf, image/jpeg, image/png" required>
             <button type="submit" class="btn btn-success border-black focus-ring focus-ring-success">
                 <iconify-icon icon="streamline-ultimate-color:check"></iconify-icon>
                 ENVIAR
@@ -34,7 +38,13 @@
             <tbody>
                 @forelse ($files as $file)
                     <tr class="align-middle">
-                        <td class="border-end"><img src="{{ asset('assets/images/documents/' . $file['name']) }}" class="img-fluid border border-black" width="100%"></td>
+                        <td class="border-end">
+                            @if ($file['type'] !== 'application/pdf')
+                                <img src="{{ asset('assets/images/documents/' . $file['name']) }}" id="preview" class="img-fluid border border-black">
+                            @else
+                                <img src="{{ asset('assets/images/icons/pdf.png') }}" id="preview" class="img-fluid">
+                            @endif
+                        </td>
                         <td class="border-end">{{ $file['name'] }}</td>
                         <td class="border-end text-center">{{ $file['size'] }}</td>
                         <td class="border-end text-center">{{ $file['last_modified'] }}</td>

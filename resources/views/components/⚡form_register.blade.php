@@ -72,7 +72,7 @@ new class extends Component {
             Senha:
         </label>
         <div class="input-group">
-            <input type="{{ $show_password ? 'text' : 'password' }}" wire:model="password" class="form-control border border-black" name="password" placeholder="***">
+            <input type="{{ $show_password ? 'text' : 'password' }}" wire:model="password" class="form-control border border-black" name="password" placeholder="@Example123">
             <button type="button" class="input-group-text border-black focus-ring" wire:click="showPassword()"><iconify-icon icon="{{ $show_password ? 'emojione-v1:eye' : 'simple-line-icons:eye' }}"></iconify-icon></button>
         </div>
         @error('password')

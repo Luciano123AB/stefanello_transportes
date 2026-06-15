@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
@@ -39,7 +40,7 @@ class DataUpdate extends Controller
     }
 
     public function dataUpdate(Request $request): RedirectResponse {
-        if (Auth::user()->role === 'admin') {
+        if (Gate::check('is_admin')) {
             $request->validate(
                 [
                     'name' => 'required|string|min:3|max:255',
@@ -61,7 +62,7 @@ class DataUpdate extends Controller
         $id = Auth::user()->id;
         $user = User::find($id);
 
-        if (Auth::user()->role === 'admin') {
+        if (Gate::check('is_admin')) {
 
             $cnpj = $request->input('cnpj');
             $data = Data::first();

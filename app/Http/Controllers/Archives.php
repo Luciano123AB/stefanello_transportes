@@ -33,7 +33,9 @@ class Archives extends Controller
             return redirect()->back()->withErrors(['file' => 'Arquivo não encontrado.']);
         }
 
-        return view('file_view')->with('name', $name);
+        return view('file_view')
+            ->with('name', $name)
+            ->with('type', $disk->mimeType($name));
     }
 
     public function fileDownload($name) {

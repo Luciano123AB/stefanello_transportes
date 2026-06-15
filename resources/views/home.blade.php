@@ -1,7 +1,7 @@
 <x-main-layout :pageTitle="'Home'">
     <div class="row text-white">
         <div class="col bg-dark opacity-50">
-            <h2>Quem sou Eu?</h2>
+            <h2>-Quem sou Eu?</h2>
             <div class="central_content overflow-auto">
                 <p>
                     Com anos de experiência nas estradas e uma trajetória construída com muito trabalho, dedicação e responsabilidade, eu atuo como caminhoneiro
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="col bg-dark opacity-50">
-            <h2>Compromissos</h2>
+            <h2>-Compromissos</h2>
             <div class="central_content overflow-auto">
                 <p>
                     Mais do que transportar cargas, eu trabalho para resolver problemas. Conhecido pela disponibilidade e agilidade no
