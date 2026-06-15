@@ -49,7 +49,7 @@ class MainController extends Controller
                 'name' => $file,
                 'size' => $size,
                 'type' => $disk->mimeType($file),
-                'last_modified' => Carbon::createFromTimestamp($disk->lastModified($file))->format('d-m-Y H:i:s')
+                'last_modified' => Carbon::createFromTimestamp($disk->lastModified($file))->format('d/m/Y H:i:s')
             ];
         }
 
