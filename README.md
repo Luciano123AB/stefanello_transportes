@@ -14,7 +14,11 @@ Aplicação web partida com **Laravel**, com foco em:
 
 ## ✨ Funcionalidades
 
-- Página home, cadastro, login, verificação, página de mais informações, atualização de dados, envio de arquivos, deleção de conta.
+- Página Home
+- Cadastro, Login, Verificação
+- Página Mais Informações
+- Envio de arquivos
+- Atualização de dados, deleção de conta
 
 ---
 
