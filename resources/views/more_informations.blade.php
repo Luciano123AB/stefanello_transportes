@@ -18,7 +18,7 @@
 
             <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">
-                    <iconify-icon icon="glyphs-poly:truck" class="informations_margin"></iconify-icon>
+                    <iconify-icon icon="glyphs-poly:truck" class="informations_margin informations_icons_margin"></iconify-icon>
                     Características do Veículo
                 </h3>
 
@@ -50,7 +50,7 @@
 
             <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">
-                    <iconify-icon icon="streamline-plump-color:location-pin" class="informations_margin"></iconify-icon>
+                    <iconify-icon icon="streamline-plump-color:location-pin" class="informations_margin informations_icons_margin"></iconify-icon>
                     Regiões Atendidas
                 </h3>
 
@@ -79,7 +79,7 @@
 
             <div class="border-bottom border-black overflow-auto">
                 <h3 class="fw-bold">
-                    <iconify-icon icon="streamline-color:calendar-jump-to-date" class="informations_margin"></iconify-icon>
+                    <iconify-icon icon="streamline-color:calendar-jump-to-date" class="informations_margin informations_icons_margin"></iconify-icon>
                     Disponibilidade
                 </h3>
 
@@ -104,7 +104,7 @@
 
             <div class="overflow-auto">
                 <h3 class="fw-bold">
-                    <iconify-icon icon="streamline-color:star-1" class="informations_margin"></iconify-icon>
+                    <iconify-icon icon="streamline-color:star-1" class="informations_margin informations_icons_margin"></iconify-icon>
                     Diferenciais
                 </h3>
 
