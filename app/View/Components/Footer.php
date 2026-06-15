@@ -19,7 +19,7 @@ class Footer extends Component
      */
     public function __construct()
     {
-        $this->data_admin = Data::first();
+        $this->data_admin = Data::find(1);
         $this->email_admin = User::where('role', 'admin')->first()->email;
     }
 
