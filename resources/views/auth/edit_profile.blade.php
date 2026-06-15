@@ -84,7 +84,7 @@
                                 </div>
                             @enderror
                         </div>
-                        @if ($data->role === 'admin')
+                        @can ('is_admin')
                             <div>
                                 <div class="input-group">
                                     <label class="input-group-text gap-1">
@@ -102,7 +102,7 @@
                                     </div>
                                 @enderror
                             </div>
-                        @endif
+                        @endcan
                     </div>
                     @error('data_error')
                         <div class="text-start">
