@@ -17,7 +17,7 @@ Route::prefix('/')->group(function () {
 
             Route::get('edit-profile', 'editProfile')->name('edit.profile');
 
-            Route::middleware([IsAdmin::class])->group(function () {
+            Route::middleware([IsAdmin::class])->group(function () {  
                 Route::get('file-list', 'fileList')->name('file.list');
             });
         });

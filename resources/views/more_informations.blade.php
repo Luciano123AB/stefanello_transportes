@@ -1,9 +1,12 @@
-<x-main_layout :pageTitle="'Mais Informações'">
+<x-main-layout :pageTitle="'Informações'">
     <div class="card border-black shadow">
         <div class="card-header"></div>
         <div class="informations_data d-grid card-body">
             <div class="division border-bottom border-black overflow-auto">
-                <h3 class="fw-bold">-Dados do Profissional</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="streamline-flex-color:text-file"></iconify-icon>
+                    Dados do Profissional
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Nome completo: Maurício Barbieri</li>
@@ -14,7 +17,10 @@
             </div>
 
             <div class="border-bottom border-black overflow-auto">
-                <h3 class="fw-bold">-Características do Veículo</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="glyphs-poly:truck" class="informations_margin"></iconify-icon>
+                    Características do Veículo
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Modelo: Scania 112</li>
@@ -27,7 +33,10 @@
             </div>
 
             <div class="division border-bottom border-black overflow-auto">
-                <h3 class="fw-bold">-Tipos de Carga</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="glyphs-poly:box-1" class="informations_margin"></iconify-icon>
+                    Tipos de Carga
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Areia</li>
@@ -40,7 +49,10 @@
             </div>
 
             <div class="border-bottom border-black overflow-auto">
-                <h3 class="fw-bold">-Regiões Atendidas</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="streamline-plump-color:location-pin" class="informations_margin"></iconify-icon>
+                    Regiões Atendidas
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Rio Grande do Sul (Central):</li>
@@ -54,7 +66,10 @@
             </div>
 
             <div class="division border-bottom border-black overflow-auto">
-                <h3 class="fw-bold">-Serviços Oferecidos</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="streamline-color:business-profession-home-office" class="informations_margin"></iconify-icon>
+                    Serviços Oferecidos
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Frete dedicado</li>
@@ -63,7 +78,10 @@
             </div>
 
             <div class="border-bottom border-black overflow-auto">
-                <h3 class="fw-bold">-Disponibilidade</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="streamline-color:calendar-jump-to-date" class="informations_margin"></iconify-icon>
+                    Disponibilidade
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
                     <li>Viagens imediatas: Sim</li>
@@ -72,19 +90,25 @@
                 </ul>
             </div>
 
-            <div class="division overflow-auto">
-                <h3 class="fw-bold">-Documentação e Regularização</h3>
+            <div id="last_line" class="division overflow-auto">
+                <h3 class="fw-bold">
+                    <iconify-icon icon="flat-color-icons:document" class="informations_margin"></iconify-icon>
+                    Documentação e Regularização
+                </h3>
 
                 <ul class="animate__animated animate__fadeInLeft">
-                    <li>RNTRC: Ativo - ******825</li>
+                    <li>RNTRC: <span class="badge bg-success">Ativo</span> - ******825</li>
                     <li>Seguro de carga: Não</li>
                 </ul>
             </div>
 
             <div class="overflow-auto">
-                <h3 class="fw-bold">-Diferenciais</h3>
+                <h3 class="fw-bold">
+                    <iconify-icon icon="streamline-color:star-1" class="informations_margin"></iconify-icon>
+                    Diferenciais
+                </h3>
 
-                <ul class="animate__animated animate__fadeInLeft">
+                <ul class="animate__animated animate__fadeInLeft mb-0">
                     <li>Pontualidade comprovada.</li>
                     <li>Atendimento direto com o motorista.</li>
                 </ul>
@@ -92,4 +116,4 @@
         </div>
         <div class="card-footer"></div>
     </div>
-</x-main_layout>
+</x-main-layout>

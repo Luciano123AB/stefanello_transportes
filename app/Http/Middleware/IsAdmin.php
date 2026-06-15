@@ -19,7 +19,7 @@ class IsAdmin
         if (Auth::user()->role !== 'admin') {
             return redirect()->route('home');
         }
-        
+
         return $next($request);
     }
 }

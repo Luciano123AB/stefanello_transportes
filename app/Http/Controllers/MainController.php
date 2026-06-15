@@ -39,16 +39,17 @@ class MainController extends Controller
 
         foreach ($all_files as $file) {
 
-            $size = round($disk->size($file) / 1024 / 1024, 1) . "MB";
+            $size = round($disk->size($file) / 1024 / 1024, 1) . 'MB';
 
             if ($disk->size($file) / 1024 / 1024 < 1) {
-                $size = round($disk->size($file) / 1024, 2) . "KB";
+                $size = round($disk->size($file) / 1024, 2) . 'KB';
             }
 
             $files[] = [
-                "name" => $file,
-                "size" => $size,
-                "last_modified" => Carbon::createFromTimestamp($disk->lastModified($file))->format("d-m-Y H:i:s")
+                'name' => $file,
+                'size' => $size,
+                'type' => $disk->mimeType($file),
+                'last_modified' => Carbon::createFromTimestamp($disk->lastModified($file))->format('d-m-Y H:i:s')
             ];
         }
 
