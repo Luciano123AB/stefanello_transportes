@@ -66,6 +66,10 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.informations_margin {
+    margin-left: 5px;
+}
+
 .division {
     border-right: 1px solid black;
 }
@@ -138,6 +142,7 @@ body {
     }
 
     .informations_margin {
+        margin-left: none;
         margin-top: 5px;
     }
 
