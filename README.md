@@ -44,6 +44,7 @@ database/
   factories/              # Dados gerados
   migrations/             # Estrutura do banco
   seeders/                # Dados iniciais
+docs/                     # Imagens usadas pelo site (Documentação do projeto)
 public/
   assets/                 # Imagens usadas pelo site (Fundos, Ícones)
     documents/            # Arquivos enviados
