@@ -50,7 +50,8 @@ tests/                    # Testes automatizados
 
 ## 📸 Demonstração
 
-![Tela](docs/home.png)
+![Tela Home](docs/home.png)
+![Tela Informações](docs/informations.png)
 
 ---
 
