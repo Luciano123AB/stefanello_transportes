@@ -33,14 +33,16 @@ Aplicação web partida com **Laravel**, com foco em:
 ```text
 app/
   Http/    
-    Controllers/          # Fluxos principais
+    Controllers/          # Fluxos principais (Register, Login, etc.)
     Middleware/           # Regras de acesso
   Models/                 # Entidades (User, Data)
 database/
+  factories/              # Dados gerados
   migrations/             # Estrutura do banco
   seeders/                # Dados iniciais
 public/
-  assets/                 # Imagem usada pelo site (Proprietário)
+  assets/                 # Imagens usadas pelo site (Fundos, Ícones)
+    documents/            # Arquivos enviados
 resources/
   views/                  # Telas Blade
 routes/
