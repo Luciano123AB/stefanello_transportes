@@ -50,10 +50,10 @@ public/
     images/               # Imagens usadas pelo site. (Fundos, Ícones, etc.)
     documents/            # Arquivos enviados.
 resources/
-  views/                  # Telas Blade
+  views/                  # Telas Blade.
 routes/
-  web.php                 # Rotas da aplicação
-tests/                    # Testes automatizados
+  web.php                 # Rotas da aplicação.
+tests/                    # Testes automatizados.
 ```
 
 ## 📸 Demonstração
