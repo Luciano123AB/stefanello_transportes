@@ -37,17 +37,18 @@ Aplicação web partida com **Laravel**, com foco em:
 ```text
 app/
   Http/    
-    Controllers/          # Fluxos principais (Register, Login, etc.)
+    Controllers/          # Controladores da aplicação. (MainController, Archives, etc.)
     Middleware/           # Regras de acesso
-  Models/                 # Entidades (User, Data)
+  Models/                 # Modelos Eloquent. (User, Data)
 database/
-  factories/              # Dados gerados
+  factories/              # Geração de dados fictícios para testes e seeders. (UserFactory, DataFactory, etc.)
   migrations/             # Estrutura do banco
-  seeders/                # Dados iniciais
-docs/                     # Imagens usadas pelo site (Documentação do projeto)
+  seeders/                # População inicial do banco de dados. (DatabaseSeeder)
+docs/                     # Imagens usadas pelo site. (Documentação do projeto)
 public/
-  assets/                 # Imagens usadas pelo site (Fundos, Ícones)
-    documents/            # Arquivos enviados
+  assets/
+    images/               # Imagens usadas pelo site. (Fundos, Ícones, etc.)
+    documents/            # Arquivos enviados.
 resources/
   views/                  # Telas Blade
 routes/
