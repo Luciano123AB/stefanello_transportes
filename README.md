@@ -1,11 +1,11 @@
 ![Laravel](https://img.shields.io/badge/Laravel-13-red)
 ![PHP](https://img.shields.io/badge/PHP-8.5-blue)
 
-# 🌐 Stefanello Transportes
+# 🚛 Stefanello Transportes
 
 ## 📜 Sobre
 
-Aplicação web partida com **Laravel**, com foco em:
+Aplicação web informativa com **Laravel**, com foco em:
 
 - Vizualização de dados.
 - Armazenamento de arquivos.
@@ -14,7 +14,11 @@ Aplicação web partida com **Laravel**, com foco em:
 
 ## ✨ Funcionalidades
 
-- Página home, cadastro, login, verificação, página de mais informações, atualização de dados, envio de arquivos, deleção de conta.
+- Página Home
+- Cadastro, Login, Verificação
+- Página Mais Informações
+- Envio de arquivos
+- Atualização de dados, deleção de conta
 
 ---
 
@@ -33,22 +37,23 @@ Aplicação web partida com **Laravel**, com foco em:
 ```text
 app/
   Http/    
-    Controllers/          # Fluxos principais (Register, Login, etc.)
+    Controllers/          # Controladores da aplicação. (MainController, Archives, etc.)
     Middleware/           # Regras de acesso
-  Models/                 # Entidades (User, Data)
+  Models/                 # Modelos Eloquent. (User, Data)
 database/
-  factories/              # Dados gerados
+  factories/              # Geração de dados fictícios para testes e seeders. (UserFactory, DataFactory, etc.)
   migrations/             # Estrutura do banco
-  seeders/                # Dados iniciais
-docs/                     # Imagens usadas pelo site (Documentação do projeto)
+  seeders/                # População inicial do banco de dados. (DatabaseSeeder)
+docs/                     # Imagens usadas pelo site. (Documentação do projeto)
 public/
-  assets/                 # Imagens usadas pelo site (Fundos, Ícones)
-    documents/            # Arquivos enviados
+  assets/
+    images/               # Imagens usadas pelo site. (Fundos, Ícones, etc.)
+    documents/            # Arquivos enviados.
 resources/
-  views/                  # Telas Blade
+  views/                  # Telas Blade.
 routes/
-  web.php                 # Rotas da aplicação
-tests/                    # Testes automatizados
+  web.php                 # Rotas da aplicação.
+tests/                    # Testes automatizados.
 ```
 
 ## 📸 Demonstração
