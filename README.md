@@ -5,7 +5,7 @@
 
 ## 📜 Sobre
 
-Aplicação web para informações e armazenamento de arquivos com **Laravel**, com foco em:
+Aplicação web informativa com **Laravel**, com foco em:
 
 - Vizualização de dados.
 - Armazenamento de arquivos.
