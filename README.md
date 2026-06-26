@@ -62,14 +62,14 @@ app/
 ├── Http/    
     ├── Controllers/      # Controladores da aplicação. (MainController, Archives, etc.)
     └── Middleware/       # Regras de acesso
-├── Models/               # Modelos Eloquent. (User, Data)
+└── Models/               # Modelos Eloquent. (User, Data)
 database/
 ├── factories/            # Geração de dados fictícios para testes e seeders. (UserFactory, DataFactory, etc.)
 ├── migrations/           # Estrutura do banco
 └── seeders/              # População inicial do banco de dados. (DatabaseSeeder)
 docs/                     # Imagens usadas pelo site. (Documentação do projeto)
 public/
-├── assets/
+└── assets/
     ├── images/           # Imagens usadas pelo site. (Fundos, Ícones, etc.)
     └── documents/        # Arquivos enviados.
 resources/
@@ -212,9 +212,11 @@ Checklist recomendado:
  
 ---
 
+```md
 ## 🗺️ Roadmap Técnico Sugerido (Melhorias)
 
 - [ ] Galeria
+```
 
 ---
 
