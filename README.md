@@ -214,7 +214,7 @@ Checklist recomendado:
 
 ## 🗺️ Roadmap Técnico Sugerido (Melhorias)
 
-- [] Galeria
+- [ ] Galeria
 
 ---
 
