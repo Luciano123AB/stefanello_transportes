@@ -1,7 +1,30 @@
 ![Laravel](https://img.shields.io/badge/Laravel-13-red)
 ![PHP](https://img.shields.io/badge/PHP-8.5-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Tests](https://img.shields.io/badge/tests-Passing-success)
 
 # 🚛 Stefanello Transportes
+- Status: 🟢 Concluído
+
+---
+
+## 📑 Índice
+
+- Sobre
+- Funcionalidades
+- Stack
+- Estrutura
+- Demonstração
+- Pré-Requisitos
+- Instalação
+- Variáveis
+- Docker
+- Deploy
+- Roadmap
+- Licença
+- Autor
+
+---
 
 ## 📜 Sobre
 
@@ -36,30 +59,30 @@ Aplicação web informativa com **Laravel**, com foco em:
 
 ```text
 app/
-  Http/    
-    Controllers/          # Controladores da aplicação. (MainController, Archives, etc.)
-    Middleware/           # Regras de acesso
-  Models/                 # Modelos Eloquent. (User, Data)
+├── Http/    
+    ├── Controllers/      # Controladores da aplicação. (MainController, Archives, etc.)
+    └── Middleware/       # Regras de acesso
+├── Models/               # Modelos Eloquent. (User, Data)
 database/
-  factories/              # Geração de dados fictícios para testes e seeders. (UserFactory, DataFactory, etc.)
-  migrations/             # Estrutura do banco
-  seeders/                # População inicial do banco de dados. (DatabaseSeeder)
+├── factories/            # Geração de dados fictícios para testes e seeders. (UserFactory, DataFactory, etc.)
+├── migrations/           # Estrutura do banco
+└── seeders/              # População inicial do banco de dados. (DatabaseSeeder)
 docs/                     # Imagens usadas pelo site. (Documentação do projeto)
 public/
-  assets/
-    images/               # Imagens usadas pelo site. (Fundos, Ícones, etc.)
-    documents/            # Arquivos enviados.
+├── assets/
+    ├── images/           # Imagens usadas pelo site. (Fundos, Ícones, etc.)
+    └── documents/        # Arquivos enviados.
 resources/
-  views/                  # Telas Blade.
+└── views/                # Telas Blade.
 routes/
-  web.php                 # Rotas da aplicação.
+└── web.php               # Rotas da aplicação.
 tests/                    # Testes automatizados.
 ```
 
 ## 📸 Demonstração
-
-![Tela Home](docs/home.png)
-![Tela Informações](docs/informations.png)
+| Tela Home | Tela Informações |
+|-------------|-----------|
+| ![](docs/home.png) | ![](docs/informations.png) |
 
 ---
 
@@ -191,7 +214,13 @@ Checklist recomendado:
 
 ## 🗺️ Roadmap Técnico Sugerido (Melhorias)
 
-- Galeria
+- [] Galeria
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT.
 
 ---
 
